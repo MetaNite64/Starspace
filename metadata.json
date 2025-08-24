@@ -1,0 +1,15 @@
+{
+	"id": "starspace",
+	"name": "Starspace",
+	"author": ["Astro", "Crystal", "Meta"],
+	"description": "Astro's personal mod.",
+	"prefix": "star",
+	"main_file": "starspace.lua",
+	"badge_colour": "4B36AB",
+	"badge_text_colour": "00E4FF",
+	"version": "0.0.0",
+	"dependencies": [
+		"Steamodded (>=1.0.0~BETA-0711a)",
+		"Talisman (>=2.3.4)"
+	],
+}
