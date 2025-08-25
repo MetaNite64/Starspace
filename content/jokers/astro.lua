@@ -32,8 +32,8 @@ SMODS.Joker {
     end
 
     -- scale xchips when a spade is scored
-    if context.individual and not context.blueprint and card.ability.extra.scale_this_hand then
-      if context.other_card:is_suit('Spades') then
+    if context.individual and context.cardarea == G.play and not context.blueprint then
+      if card.ability.extra.scale_this_hand and context.other_card:is_suit('Spades') then
         card.ability.extra.xchips = card.ability.extra.xchips + card.ability.extra.xchips_gain
         return {
           message = 'Upgraded!',
