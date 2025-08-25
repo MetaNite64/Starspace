@@ -7,17 +7,18 @@ STAR_UTIL.enabled_jokers = {
   'crystal',
   --'paradox',
   --'creature',
-  --'neutron_star',
+  'rocket_pop',
   --'microtransagolor',
   --'combo_pizza',
   --'sonic',
   --'rewrite',
   --'rewrite_ascended',
-  --'meta_knight',
+  'meta_knight',
   --'astro_burger',
   --'scrap_machete',
   --'checked_mate',
   --'writh_wrath',
+  --'cosplay',
 }
 
 function STAR_UTIL.load_items(names, path)
