@@ -10,14 +10,6 @@ SMODS.Joker {
   eternal_compat = true,
   perishable_compat = true,
 
-  loc_txt = { ['en-us'] = {
-    name = 'Crystal',
-    text = {
-      'Retrigger the {C:attention}Joker{} to',
-      'the right #1# times'
-    }
-  } },
-
   loc_vars = function(self, info_queue, card)
     return { vars = {
       card.ability.extra.retriggers

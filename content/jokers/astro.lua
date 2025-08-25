@@ -1,6 +1,6 @@
 SMODS.Joker {
   key = "astro",
-  atlas = "placeholder",
+  atlas = "jokers",
   pos = { x = 0, y = 0 },
   config = { extra = {
     xchips = 1,
@@ -13,17 +13,6 @@ SMODS.Joker {
   eternal_compat = true,
   perishable_compat = false,
   
-  loc_txt = { ['en-us'] = {
-    name = 'Astro',
-    text = {
-      'This Joker gains {X:chips,C:white}X#1#{} Chips',
-      'when a {C:spades}Spade{} is scored,',
-      'unless a {C:hearts}Heart{} is',
-      'in the scored hand',
-      '{C:inactive}(Currently {X:chips,C:white}X#2#{C:inactive} Chips)'
-    }
-  } },
-
   loc_vars = function(self, info_queue, card)
     return { vars = {
       card.ability.extra.xchips_gain,
