@@ -3,8 +3,8 @@ SMODS.Joker {
   atlas = "jokers",
   pos = { x = 1, y = 0 },
   config = { extra = {
-    xchips = 1,
-    xchips_gain = 0.1,
+    xmult = 1,
+    xmult_gain = 0.1,
     scale_this_hand = true
   } },
   rarity = 2,
@@ -15,13 +15,13 @@ SMODS.Joker {
   
   loc_vars = function(self, info_queue, card)
     return { vars = {
-      card.ability.extra.xchips_gain,
-      card.ability.extra.xchips
+      card.ability.extra.xmult_gain,
+      card.ability.extra.xmult
     } }
   end,
 
   calculate = function(self, card, context)
-    -- check if any hearts are in the played hand
+    -- check if any spades are in the played hand
     if context.before and not context.blueprint then
       for _, v in ipairs(context.scoring_hand) do
         if v:is_suit('Spades') then
@@ -31,23 +31,23 @@ SMODS.Joker {
       end
     end
 
-    -- scale xchips when a spade is scored
-    if context.individual and not context.blueprint and card.ability.extra.scale_this_hand then
-      if context.other_card:is_suit('Hearts') then
-        card.ability.extra.xchips = card.ability.extra.xchips + card.ability.extra.xchips_gain
+    -- scale xmult when a heart is scored
+    if context.individual and context.cardarea == G.play and not context.blueprint then
+      if card.ability.extra.scale_this_hand and context.other_card:is_suit('Hearts') then
+        card.ability.extra.xmult = card.ability.extra.xmult + card.ability.extra.xmult_gain
         return {
           message = 'Upgraded!',
-          colour = G.C.CHIPS,
+          colour = G.C.MULT,
           message_card = card
         }
       end
     end
 
-    -- give xchips and reset scale_this_hand
+    -- give xmult and reset scale_this_hand
     if context.joker_main then
       card.ability.extra.scale_this_hand = true
       return {
-        xchips = card.ability.extra.xchips
+        xmult = card.ability.extra.xmult
       }
     end
   end

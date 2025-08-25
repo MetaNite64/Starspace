@@ -39,11 +39,11 @@ return {
       j_star_scrap = {
         name = "Scrap",
         text = {
-          "This Joker gains {X:chips,C:white}X#1#{} Chips",
+          "This Joker gains {X:mult,C:white}X#1#{} Mult",
           "when a {C:hearts}Heart{} is scored,",
           "unless a {C:spades}Spade{} is",
           "in the scored hand",
-          "{C:inactive}(Currently {X:chips,C:white}X#2#{C:inactive} Chips)"
+          "{C:inactive}(Currently {X:mult,C:white}X#2#{C:inactive} Mult)"
         }
       }
     }
