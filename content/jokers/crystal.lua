@@ -1,7 +1,7 @@
 SMODS.Joker {
   key = "crystal",
-  atlas = "placeholder",
-  pos = { x = 0, y = 0 },
+  atlas = "jokers",
+  pos = { x = 7, y = 0 },
   config = { extra = {
     retriggers = 3
   } },
