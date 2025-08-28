@@ -4,7 +4,7 @@ SMODS.Joker {
   pos = { x = 1, y = 0 },
   config = { extra = {
     xmult = 1,
-    xmult_gain = 0.1,
+    xmult_gain = 0.5,
     scale_this_hand = true
   } },
   rarity = 2,
