@@ -52,6 +52,29 @@ return {
     dictionary = {
       k_plus_steel_ex = "+1 Steel",
       k_plus_trigger_ex = "+1 Trigger"
+    },
+    quips = {
+      star_astro_win_1 = { "TETRATION!!!!!" },
+      star_astro_win_2 = { "Look!", "It's me!" },
+      star_astro_win_3 = { "Hamburber ...", ":3" },
+      star_astro_win_4 = { "This really was", "a Balatrotale." },
+      star_astro_win_5 = { "Mreow!" },
+
+      star_astro_lose_1 = { "Mreow!" },
+      star_astro_lose_2 = { "Please don't", "tell Scrap..." },
+      star_astro_lose_3 = { "I- I'm flabbergasted..." },
+      star_astro_lose_4 = { "...It's okay! Bet'cha", "you'll find me in", "the next run!" },
+      star_astro_lose_5 = { "Master Plan", "my ass!" },
+
+      star_scrap_win_1 = { "Great minds think", "alike, Player." },
+      star_scrap_win_2 = { "Well met." },
+      star_scrap_win_3 = { "Good thinking, Player.", "I'm impressed." },
+      star_scrap_win_4 = { "Sorry, how many Chips?" },
+
+      star_scrap_lose_1 = { "I swear to god." },
+      star_scrap_lose_2 = { "Use that brain", "of yours!" },
+      star_scrap_lose_3 = { "Screw this, I'm making", "myself some apple pie..." },
+      star_scrap_lose_4 = { "HISSSSSS" }
     }
   }
 }

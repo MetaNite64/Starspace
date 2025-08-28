@@ -21,6 +21,12 @@ STAR_UTIL.enabled_jokers = {
   --'cosplay',
 }
 
+-- Quips table
+STAR_UTIL.enabled_quips = {
+  'astro_quips',
+  'scrap_quips',
+}
+
 function STAR_UTIL.load_items(names, path)
   for i = 1, #names do
     assert(SMODS.load_file(path .. '/' .. names[i] .. '.lua'))()

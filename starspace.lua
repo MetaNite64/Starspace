@@ -14,4 +14,5 @@ SMODS.Atlas {
   px = 71, py = 95
 }
 
-STAR_UTIL.load_items(STAR_UTIL.enabled_jokers, 'content/Jokers')
+STAR_UTIL.load_items(STAR_UTIL.enabled_jokers, 'content/jokers')
+STAR_UTIL.load_items(STAR_UTIL.enabled_quips, 'content/quips')
