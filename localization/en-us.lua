@@ -36,6 +36,15 @@ return {
           "{C:inactive}(Currently {X:mult,C:white}X#3#{C:inactive} Mult, {C:attention}#4#{C:inactive} #5#)"
         }
       },
+      j_star_sage = {
+        name = "Sage",
+        text = {
+          "This Joker gains {X:mult,C:white}X#1#{} Mult",
+          "every time {C:gold}money{} is",
+          "earned during scoring",
+          "{C:inactive}(Currently {X:mult,C:white}X#2#{C:inactive} Mult)"
+        }
+      },
       j_star_scrap = {
         name = "Scrap",
         text = {
