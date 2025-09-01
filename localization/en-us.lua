@@ -51,7 +51,11 @@ return {
   misc = {
     dictionary = {
       k_plus_steel_ex = "+1 Steel",
-      k_plus_trigger_ex = "+1 Trigger"
+      k_plus_trigger_ex = "+1 Trigger",
+      k_star_cosmic = "Cosmic"
+    },
+    labels = {
+      k_star_cosmic = "Cosmic"
     },
     quips = {
       star_astro_win_1 = { "TETRATION!!!!!" },
