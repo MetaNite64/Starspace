@@ -1,7 +1,7 @@
 SMODS.Joker {
   key = "meta_knight",
   atlas = "jokers",
-  pos = { x = 3, y = 0 },
+  pos = { x = 1, y = 2 },
   rarity = 2,
   cost = 7,
   blueprint_compat = true,

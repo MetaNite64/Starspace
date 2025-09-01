@@ -1,7 +1,7 @@
 SMODS.Joker {
   key = "rocket_pop",
   atlas = "jokers",
-  pos = { x = 2, y = 0 },
+  pos = { x = 0, y = 3 },
   config = { extra = {
     xmult = 2,
     xmult_loss_percent = 0.1,
