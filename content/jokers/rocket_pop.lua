@@ -3,7 +3,7 @@ SMODS.Joker {
   atlas = "jokers",
   pos = { x = 2, y = 0 },
   config = { extra = {
-    xmult = 3,
+    xmult = 2,
     xmult_loss_percent = 0.1,
     retriggers = 0,
     retriggers_gain = 1
