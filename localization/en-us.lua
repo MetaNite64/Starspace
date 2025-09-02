@@ -18,6 +18,12 @@ return {
           "the right #1# times"
         }
       },
+      j_star_glorp = {
+        name = "Glorp",
+        text = {
+          "{C:mult}+(Current Mult){} Mult"
+        }
+      },
       j_star_meta_knight = {
         name = "Meta Knight",
         text = {

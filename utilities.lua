@@ -20,7 +20,7 @@ STAR_UTIL.enabled_jokers = {
   --'astronomical_joker',
   --'chronological_joker',
   --'angelic_joker',
-  --'glorp',
+  'glorp',
   --'quadratical',
   --':3c',
   --'chocolate_pi',
