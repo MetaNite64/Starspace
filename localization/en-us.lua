@@ -60,6 +60,13 @@ return {
           "in the scored hand",
           "{C:inactive}(Currently {X:mult,C:white}X#2#{C:inactive} Mult)"
         }
+      },
+      j_star_shard = {
+        name = "Shard",
+        text = {
+          "Retrigger the leftmost",
+          "{C:attention}Joker{} #1# times"
+        }
       }
     },
     Spectral = {

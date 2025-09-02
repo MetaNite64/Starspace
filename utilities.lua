@@ -14,7 +14,7 @@ STAR_UTIL.enabled_jokers = {
   'meta_knight',
   --'galacta_knight',
   --'bacon_burger',
-  --'shard',
+  'shard',
   --'scrap_machete',
   --'writh_wrath',
   --'astronomical_joker',
