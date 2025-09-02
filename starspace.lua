@@ -14,6 +14,13 @@ SMODS.Atlas {
   px = 71, py = 95
 }
 
+-- consumables atlas
+SMODS.Atlas {
+  key = "consumables",
+  path = "consumables.png",
+  px = 71, py = 95
+}
+
 -- Cosmic rarity
 SMODS.Rarity {
   key = "cosmic",

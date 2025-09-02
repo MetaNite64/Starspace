@@ -1,8 +1,9 @@
 SMODS.Consumable {
   key = "starspace",
   set = "Spectral",
-  atlas = "placeholder",
-  pos = { x = 0, y = 0 },
+  atlas = "consumables",
+  pos = { x = 1, y = 0 },
+  soul_pos = { x = 2, y = 0 },
   hidden = true,
   soul_set = "Spectral",
   soul_rate = 0.003,
