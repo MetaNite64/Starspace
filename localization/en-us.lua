@@ -112,7 +112,19 @@ return {
       star_scrap_lose_1 = { "I swear to god." },
       star_scrap_lose_2 = { "Use that brain", "of yours!" },
       star_scrap_lose_3 = { "Screw this, I'm making", "myself some apple pie..." },
-      star_scrap_lose_4 = { "HISSSSSS" }
+      star_scrap_lose_4 = { "HISSSSSS" },
+
+      star_sage_win_1 = { "ALL of the arrows!" },
+      star_sage_win_2 = { "All of that time", "calculating and you STILL", "barely cleared Ante 4." },
+      star_sage_win_3 = { "Pet the Astro.", "Pet the Scrap." },
+      star_sage_win_4 = { "Call these televisions", "CRTs the way they", "be purrin" },
+      star_sage_win_5 = { "Mrrrow..." },
+
+      star_sage_lose_1 = { "Mrrrow..." },
+      star_sage_lose_2 = { "Meet'cha in Heaven." },
+      star_sage_lose_3 = { "Get in, loser.", "We're going to", "another run." },
+      star_sage_lose_4 = { "Arright, who put", "hamburgers in", "the engine?" },
+      star_sage_lose_5 = { "I'm not gonna", "plan your ass, Astro." }
     }
   }
 }

@@ -38,6 +38,7 @@ STAR_UTIL.enabled_consumables = {
 STAR_UTIL.enabled_quips = {
   'astro_quips',
   'scrap_quips',
+  'sage_quips',
 }
 
 function STAR_UTIL.load_items(names, path)
