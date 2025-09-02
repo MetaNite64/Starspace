@@ -22,7 +22,7 @@ SMODS.Joker {
 
   calculate = function(self, card, context)
     if context.money_altered and not context.blueprint then
-      if context.amount > to_big(0) and context.from_scoring then
+      if context.from_scoring and to_big(context.amount) > to_big(0) then
         SMODS.scale_card(card, {
           ref_table = card.ability.extra,
           ref_value = "xmult",
