@@ -21,5 +21,13 @@ SMODS.Rarity {
   default_weight = 0.025
 }
 
+-- Galactic rarity
+SMODS.Rarity {
+  key = "galactic",
+  badge_colour = HEX("00E4FF"),
+  default_weight = 0
+}
+
 STAR_UTIL.load_items(STAR_UTIL.enabled_jokers, 'content/jokers')
+STAR_UTIL.load_items(STAR_UTIL.enabled_consumables, 'content/consumables')
 STAR_UTIL.load_items(STAR_UTIL.enabled_quips, 'content/quips')

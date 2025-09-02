@@ -7,7 +7,7 @@ SMODS.Joker {
     xmult = 1,
     xmult_gain = 6.66
   } },
-  rarity = 4, -- will change to Galactic eventually
+  rarity = "star_galactic",
   cost = 50,
   blueprint_compat = true,
   eternal_compat = true,

@@ -55,16 +55,28 @@ return {
           "{C:inactive}(Currently {X:mult,C:white}X#2#{C:inactive} Mult)"
         }
       }
+    },
+    Spectral = {
+      c_star_starspace = {
+        name = "Starspace",
+        text = {
+          "Creates a",
+          "{C:star_galactic,E:1}Galactic{} Joker",
+          "{C:inactive}(Must have room){}"
+        }
+      }
     }
   },
   misc = {
     dictionary = {
       k_plus_steel_ex = "+1 Steel",
       k_plus_trigger_ex = "+1 Trigger",
-      k_star_cosmic = "Cosmic"
+      k_star_cosmic = "Cosmic",
+      k_star_galactic = "Galactic"
     },
     labels = {
-      k_star_cosmic = "Cosmic"
+      k_star_cosmic = "Cosmic",
+      k_star_galactic = "Galactic"
     },
     quips = {
       star_astro_win_1 = { "TETRATION!!!!!" },

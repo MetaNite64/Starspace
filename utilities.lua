@@ -26,6 +26,14 @@ STAR_UTIL.enabled_jokers = {
   --'chocolate_pi',
 }
 
+-- Consumables table
+STAR_UTIL.enabled_consumables = {
+  --'fool_spectral',
+  'starspace',
+  --'epitome',
+  --'starship',
+}
+
 -- Quips table
 STAR_UTIL.enabled_quips = {
   'astro_quips',
