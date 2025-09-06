@@ -69,6 +69,16 @@ return {
         }
       }
     },
+    Other = {
+      star_rose_gold_seal = {
+        name = "Rose Gold Seal",
+        text = {
+          "Earn {C:money}$#1#{} per",
+          "{C:attention}seal{} played in",
+          "{C:attention}scoring hand{}"
+        }
+      },
+    },
     Spectral = {
       c_star_starspace = {
         name = "Starspace",
@@ -89,7 +99,9 @@ return {
     },
     labels = {
       k_star_cosmic = "Cosmic",
-      k_star_galactic = "Galactic"
+      k_star_galactic = "Galactic",
+
+      star_rose_gold_seal = "Rose Gold Seal",
     },
     quips = {
       star_astro_win_1 = { "TETRATION!!!!!" },

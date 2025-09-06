@@ -34,6 +34,13 @@ STAR_UTIL.enabled_consumables = {
   --'starship',
 }
 
+-- Seals table
+STAR_UTIL.enabled_seals = {
+  'rose_gold',
+  --'bronze',
+  --'emerald',
+}
+
 -- Quips table
 STAR_UTIL.enabled_quips = {
   'astro_quips',
