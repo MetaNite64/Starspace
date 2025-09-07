@@ -21,7 +21,10 @@ return {
       j_star_glorp = {
         name = "Glorp",
         text = {
-          "{C:mult}+(Current Mult){} Mult"
+          "{X:mult,C:white}X#1#{} Mult during",
+          "{C:attention}context.#2#{},",
+          "context changes at",
+          "end of round"
         }
       },
       j_star_meta_knight = {
@@ -70,6 +73,14 @@ return {
       }
     },
     Other = {
+      star_emerald_seal = {
+        name = "Emerald Seal",
+        text = {
+          "Retrigger every other",
+          "card with a {C:attention}seal{}",
+          "in {C:attention}scoring hand{}"
+        }
+      },
       star_rose_gold_seal = {
         name = "Rose Gold Seal",
         text = {
@@ -101,6 +112,7 @@ return {
       k_star_cosmic = "Cosmic",
       k_star_galactic = "Galactic",
 
+      star_emerald_seal = "Emerald Seal",
       star_rose_gold_seal = "Rose Gold Seal",
     },
     quips = {
