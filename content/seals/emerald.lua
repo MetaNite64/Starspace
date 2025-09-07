@@ -2,7 +2,7 @@ SMODS.Seal {
   key = "emerald",
   atlas = "card_mods",
   pos = { x = 2, y = 0 },
-  badge_colour = HEX("67CF83"),
+  badge_colour = STAR_UTIL.colors.emerald,
 
   -- thanks Entropy
   calculate = function(self, card, context)

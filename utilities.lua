@@ -28,10 +28,13 @@ STAR_UTIL.enabled_jokers = {
 
 -- Consumables table
 STAR_UTIL.enabled_consumables = {
-  --'fool_spectral',
-  'starspace',
+  --'illusioned',
   --'epitome',
-  --'starship',
+  --'retribution',
+  'eclipse',
+  --'conductivity',
+  'gemstone',
+  'starspace',
 }
 
 -- Seals table
@@ -47,6 +50,17 @@ STAR_UTIL.enabled_quips = {
   'scrap_quips',
   'sage_quips',
 }
+
+-- custom colors
+STAR_UTIL.colors = {
+  rose_gold = HEX("DA9592"),
+  emerald = HEX("67CF83")
+}
+
+loc_colour()
+for i, v in pairs(STAR_UTIL.colors) do
+  G.ARGS.LOC_COLOURS["star_" .. i] = v
+end
 
 function STAR_UTIL.load_items(names, path)
   for i = 1, #names do

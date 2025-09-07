@@ -91,6 +91,22 @@ return {
       },
     },
     Spectral = {
+      c_star_eclipse = {
+        name = "Eclipse",
+        text = {
+          "Add a {C:star_rose_gold}Rose Gold Seal{}",
+          "to {C:attention}1{} selected",
+          "card in your hand"
+        }
+      },
+      c_star_gemstone = {
+        name = "Gemstone",
+        text = {
+          "Add an {C:star_emerald}Emerald Seal{}",
+          "to {C:attention}1{} selected",
+          "card in your hand"
+        }
+      },
       c_star_starspace = {
         name = "Starspace",
         text = {

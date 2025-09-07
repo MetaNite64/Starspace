@@ -2,7 +2,7 @@ SMODS.Seal {
   key = "rose_gold",
   atlas = "card_mods",
   pos = { x = 0, y = 0 },
-  badge_colour = HEX("DA9592"),
+  badge_colour = STAR_UTIL.colors.rose_gold,
 
   config = { extra = {
     seal_count = 0,
