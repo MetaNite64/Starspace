@@ -44,6 +44,13 @@ STAR_UTIL.enabled_seals = {
   'emerald',
 }
 
+-- load patches
+assert(SMODS.load_file('lib/patch.lua'))()
+-- Patches table
+STAR_UTIL.enabled_patches = {
+  'generous',
+}
+
 -- Quips table
 STAR_UTIL.enabled_quips = {
   'astro_quips',
@@ -66,6 +73,13 @@ function STAR_UTIL.load_items(names, path)
   for i = 1, #names do
     assert(SMODS.load_file(path .. '/' .. names[i] .. '.lua'))()
   end
+end
+
+function STAR_UTIL.is_patch(name)
+  for _, v in ipairs(STAR_UTIL.enabled_patches) do
+    if "star_" .. v == name then return true end
+  end
+  return false
 end
 
 SMODS.current_mod.optional_features = function()

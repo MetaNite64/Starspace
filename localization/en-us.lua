@@ -73,6 +73,7 @@ return {
       }
     },
     Other = {
+      -- Seals
       star_emerald_seal = {
         name = "Emerald Seal",
         text = {
@@ -87,6 +88,15 @@ return {
           "Earn {C:money}$#1#{} per",
           "{C:attention}seal{} played in",
           "{C:attention}scoring hand{}"
+        }
+      },
+
+      -- Patches
+      star_generous = {
+        name = "Generous",
+        text = {
+          "Earn {C:money}$2{} at",
+          "end of round"
         }
       },
     },
@@ -122,7 +132,8 @@ return {
       k_plus_steel_ex = "+1 Steel",
       k_plus_trigger_ex = "+1 Trigger",
       k_star_cosmic = "Cosmic",
-      k_star_galactic = "Galactic"
+      k_star_galactic = "Galactic",
+      star_patches = "Patches",
     },
     labels = {
       k_star_cosmic = "Cosmic",
@@ -130,6 +141,8 @@ return {
 
       star_emerald_seal = "Emerald Seal",
       star_rose_gold_seal = "Rose Gold Seal",
+
+      star_generous = "Generous",
     },
     quips = {
       star_astro_win_1 = { "TETRATION!!!!!" },
