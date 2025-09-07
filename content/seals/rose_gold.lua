@@ -15,13 +15,11 @@ SMODS.Seal {
 
   calculate = function(self, card, context)
     if context.before and context.cardarea == G.play then
+      card.ability.seal.extra.seal_count = 0
       for i, v in pairs(context.scoring_hand) do
+        print(v.seal)
         if v.seal then card.ability.seal.extra.seal_count = card.ability.seal.extra.seal_count + 1 end
       end
-    end
-
-    if context.after and context.cardarea == G.play then
-      card.ability.seal.extra.seal_count = 0
     end
   end,
 
