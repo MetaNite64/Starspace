@@ -38,7 +38,7 @@ STAR_UTIL.enabled_consumables = {
 STAR_UTIL.enabled_seals = {
   'rose_gold',
   --'bronze',
-  --'emerald',
+  'emerald',
 }
 
 -- Quips table
