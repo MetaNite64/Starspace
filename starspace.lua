@@ -45,6 +45,7 @@ SMODS.Rarity {
 STAR_UTIL.load_items(STAR_UTIL.enabled_jokers, 'content/jokers')
 STAR_UTIL.load_items(STAR_UTIL.enabled_consumables, 'content/consumables')
 STAR_UTIL.load_items(STAR_UTIL.enabled_seals, 'content/seals')
+STAR_UTIL.load_items(STAR_UTIL.enabled_stickers, 'content/stickers')
 STAR_UTIL.load_items(STAR_UTIL.enabled_patches, 'content/patches')
 STAR_UTIL.load_items(STAR_UTIL.enabled_quips, 'content/quips')
 assert(SMODS.load_file('lib/collection.lua'))()

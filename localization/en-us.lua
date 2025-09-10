@@ -91,6 +91,15 @@ return {
         }
       },
 
+      -- Stickers
+      star_gigantic = {
+        name = "Gigantic",
+        text = {
+          "Takes up an",
+          "extra slot"
+        }
+      },
+
       -- Patches
       star_generous = {
         name = "Generous",
@@ -141,6 +150,8 @@ return {
 
       star_emerald_seal = "Emerald Seal",
       star_rose_gold_seal = "Rose Gold Seal",
+
+      star_gigantic = "Gigantic",
 
       star_generous = "Generous",
     },

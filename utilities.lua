@@ -44,6 +44,12 @@ STAR_UTIL.enabled_seals = {
   'emerald',
 }
 
+-- Stickers table
+STAR_UTIL.enabled_stickers = {
+  --'isolated',
+  'gigantic',
+}
+
 -- load patches
 assert(SMODS.load_file('lib/patch.lua'))()
 -- Patches table
