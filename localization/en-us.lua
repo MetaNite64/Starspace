@@ -134,6 +134,16 @@ return {
           "{C:inactive}(Must have room){}"
         }
       }
+    },
+    Stake = {
+      stake_star_amethyst = {
+        name = "Amethyst Stake",
+        text = {
+          "Shop can have {C:attention}Gigantic{} Jokers",
+          "{s:0.8,C:inactive}(takes up an extra Joker slot){}",
+          "{s:0.8}Applies all previous Stakes"
+        }
+      }
     }
   },
   misc = {

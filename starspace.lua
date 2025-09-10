@@ -28,6 +28,19 @@ SMODS.Atlas {
   px = 71, py = 95
 }
 
+-- stakes atlases
+SMODS.Atlas {
+  key = "stakes",
+  path = "stakes.png",
+  px = 29, py = 29
+}
+
+SMODS.Atlas {
+  key = "stake_stickers",
+  path = "stake_stickers.png",
+  px = 71, py = 95
+}
+
 -- Cosmic rarity
 SMODS.Rarity {
   key = "cosmic",
@@ -47,5 +60,6 @@ STAR_UTIL.load_items(STAR_UTIL.enabled_consumables, 'content/consumables')
 STAR_UTIL.load_items(STAR_UTIL.enabled_seals, 'content/seals')
 STAR_UTIL.load_items(STAR_UTIL.enabled_stickers, 'content/stickers')
 STAR_UTIL.load_items(STAR_UTIL.enabled_patches, 'content/patches')
+STAR_UTIL.load_items(STAR_UTIL.enabled_stakes, 'content/stakes')
 STAR_UTIL.load_items(STAR_UTIL.enabled_quips, 'content/quips')
 assert(SMODS.load_file('lib/collection.lua'))()

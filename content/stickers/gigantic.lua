@@ -5,9 +5,9 @@ SMODS.Sticker {
   pos = { x = 1, y = 1 },
 
   should_apply = function(self, card, center, area, bypass_roll)
-    if bypass_roll then return G.GAME.modifiers.enable_rentals_in_shop end
-    return G.GAME.modifiers.enable_rentals_in_shop
-            and pseudorandom('gigantic' .. G.GAME.round_resets.ante) > 0.9
+    if bypass_roll then return G.GAME.modifiers.enable_gigantics_in_shop end
+    return G.GAME.modifiers.enable_gigantics_in_shop
+            and pseudorandom('gigantic' .. G.GAME.round_resets.ante) > 0.7
   end,
 
   apply = function(self, card, val)

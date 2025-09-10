@@ -50,6 +50,12 @@ STAR_UTIL.enabled_stickers = {
   'gigantic',
 }
 
+-- Stakes table
+STAR_UTIL.enabled_stakes = {
+  --'amber',
+  'amethyst',
+}
+
 -- load patches
 assert(SMODS.load_file('lib/patch.lua'))()
 -- Patches table
