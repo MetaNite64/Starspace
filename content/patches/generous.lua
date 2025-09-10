@@ -4,12 +4,10 @@ STAR_UTIL.Patch {
   atlas = "card_mods",
   pos = { x = 1, y = 2 },
 
-  should_apply = function(self, card, center, area, bypass_roll)
-    return not card.rental
-  end,
+  should_apply = false,
 
   calculate = function(self, card, context)
-    if context.end_of_round and context.cardarea == G.jokers then
+    if context.end_of_round and not context.repetition and not context.individual then
       return {
         dollars = 2
       }

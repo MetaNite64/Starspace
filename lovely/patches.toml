@@ -1,0 +1,18 @@
+[manifest]
+version = "1.0.0"
+priority = 0
+
+# 50/50 chance to replace stickers with their respective patches
+[[patches]]
+[patches.pattern]
+target = "functions/common_events.lua"
+pattern = "card:set_rental(true)"
+position = "at"
+match_indent = true
+payload = '''
+if pseudorandom("patch_roll") > 0.5 then
+	card:set_rental(true)
+else
+	SMODS.Stickers["star_generous"]:apply(card, true)
+end
+'''
