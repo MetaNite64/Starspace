@@ -141,7 +141,7 @@ return {
         text = {
           "Shop can have {C:attention}Gigantic{} Jokers",
           "{s:0.8,C:inactive}(takes up an extra Joker slot){}",
-          "{s:0.8}Applies all previous Stakes"
+          "{s:0.8}Applies Gold Stake"
         }
       }
     }
