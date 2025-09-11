@@ -7,6 +7,7 @@ SMODS.Sticker {
   should_apply = function(self, card, center, area, bypass_roll)
     if bypass_roll then return G.GAME.modifiers.enable_gigantics_in_shop end
     return G.GAME.modifiers.enable_gigantics_in_shop
+            and card.config.center.set == 'Joker'
             and pseudorandom('gigantic' .. G.GAME.round_resets.ante) > 0.7
   end,
 
