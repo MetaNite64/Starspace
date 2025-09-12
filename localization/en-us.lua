@@ -92,6 +92,15 @@ return {
       },
 
       -- Stickers
+      star_isolated = {
+        name = "Isolated",
+        text = {
+          "Flips over during",
+          "{C:attention}blinds{} and shuffles",
+          "itself among other",
+          "Isolated cards"
+        }
+      },
       star_gigantic = {
         name = "Gigantic",
         text = {
@@ -106,6 +115,24 @@ return {
         text = {
           "Earn {C:money}$2{} at",
           "end of round"
+        }
+      },
+
+      -- Stake Stickers
+      star_amber_sticker = {
+        name = "Amber Sticker",
+        text = {
+          "Used this Joker",
+          "to win on {C:attention}Amber{}",
+          "{C:attention}Stake{} difficulty"
+        }
+      },
+      star_amethyst_sticker = {
+        name = "Amethyst Sticker",
+        text = {
+          "Used this Joker",
+          "to win on {C:attention}Amethyst{}",
+          "{C:attention}Stake{} difficulty"
         }
       },
     },
@@ -136,12 +163,20 @@ return {
       }
     },
     Stake = {
+      stake_star_amber = {
+        name = "Amber Stake",
+        text = {
+          "Shop can have {C:attention}Isolated{} Jokers",
+          "{s:0.8,C:inactive}(flips and shuffles during Blinds){}",
+          "{s:0.8}Applies Gold Stake{}"
+        }
+      },
       stake_star_amethyst = {
         name = "Amethyst Stake",
         text = {
           "Shop can have {C:attention}Gigantic{} Jokers",
           "{s:0.8,C:inactive}(takes up an extra Joker slot){}",
-          "{s:0.8}Applies Gold Stake"
+          "{s:0.8}Applies Amber Stake{}"
         }
       }
     }
@@ -161,6 +196,7 @@ return {
       star_emerald_seal = "Emerald Seal",
       star_rose_gold_seal = "Rose Gold Seal",
 
+      star_isolated = "Isolated",
       star_gigantic = "Gigantic",
 
       star_generous = "Generous",
