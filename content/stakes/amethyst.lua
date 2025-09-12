@@ -13,6 +13,6 @@ SMODS.Stake {
   shiny = true,
 
   modifiers = function()
-    G.GAME.modifiers.enable_gigantics_in_shop = true
+    G.GAME.modifiers.enable_star_gigantic = true
   end
 }
