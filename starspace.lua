@@ -45,7 +45,11 @@ SMODS.Atlas {
 SMODS.Rarity {
   key = "cosmic",
   badge_colour = HEX("ED3BAF"),
-  default_weight = 0.025
+  default_weight = 0.025,
+
+  pools = {
+    ["Joker"] = true
+  }
 }
 
 -- Galactic rarity
