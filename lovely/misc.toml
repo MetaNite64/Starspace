@@ -1,0 +1,16 @@
+[manifest]
+version = "1.0.0"
+priority = 0
+
+# G.FUNCS.can_select_card: account for extra_slots_used
+# this fucking sucks and only accounts for jokers
+[[patches]]
+[patches.pattern]
+target = "functions/button_callbacks.lua"
+pattern = "if card.ability.set ~= 'Joker' or #G.jokers.cards < G.jokers.config.card_limit + card_limit then"
+position = "at"
+match_indent = true
+payload = '''
+local extra_slots_used = card.ability.extra_slots_used
+if card.ability.set ~= 'Joker' or #G.jokers.cards < G.jokers.config.card_limit + card_limit - extra_slots_used then	
+'''
