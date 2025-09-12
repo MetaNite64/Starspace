@@ -10,6 +10,7 @@ SMODS.Joker {
   blueprint_compat = false,
   eternal_compat = true,
   perishable_compat = true,
+  pronouns = "she_her",
 
   loc_vars = function(self, info_queue, card)
     return { vars = {
