@@ -46,13 +46,13 @@ STAR_UTIL.enabled_seals = {
 
 -- Stickers table
 STAR_UTIL.enabled_stickers = {
-  --'isolated',
+  'isolated',
   'gigantic',
 }
 
 -- Stakes table
 STAR_UTIL.enabled_stakes = {
-  --'amber',
+  'amber',
   'amethyst',
 }
 

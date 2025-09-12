@@ -55,6 +55,64 @@ SMODS.Rarity {
   default_weight = 0
 }
 
+-- global mod calculate function
+SMODS.current_mod.calculate = function(self, context)
+  -- flip Isolated jokers during blinds
+  if context.setting_blind and context.main_eval then
+    STAR_UTIL.jank_isolated_flag = true
+    local isolated_flag = false
+    local isolated_cards = {}
+    local isolated_positions = {}
+    for i, v in ipairs(G.jokers.cards) do
+      if v.ability.star_isolated and v.facing == "front" then
+        v:flip()
+        isolated_flag = true
+        table.insert(isolated_cards, v)
+        table.insert(isolated_positions, i)
+      end
+    end
+    if isolated_flag then
+      -- shuffle Isolated jokers during blinds
+      G.E_MANAGER:add_event(Event({
+        trigger = "after",
+        delay = 0.2,
+        func = function()
+          pseudoshuffle(isolated_cards)
+          for i = 1, #isolated_cards do
+            G.jokers.cards[isolated_positions[i]] = isolated_cards[i]
+          end
+          play_sound("cardSlide1", 0.85)
+          return true
+        end
+      }))
+      G.E_MANAGER:add_event(Event({
+        trigger = "after",
+        delay = 0.15,
+        func = function()
+          pseudoshuffle(isolated_cards)
+          for i = 1, #isolated_cards do
+            G.jokers.cards[isolated_positions[i]] = isolated_cards[i]
+          end
+          play_sound("cardSlide1", 1.15)
+          return true
+        end
+      }))
+      G.E_MANAGER:add_event(Event({
+        trigger = "after",
+        delay = 0.15,
+        func = function()
+          pseudoshuffle(isolated_cards)
+          for i = 1, #isolated_cards do
+            G.jokers.cards[isolated_positions[i]] = isolated_cards[i]
+          end
+          play_sound("cardSlide1", 1)
+          return true
+        end
+      }))
+    end
+  end
+end
+
 STAR_UTIL.load_items(STAR_UTIL.enabled_jokers, 'content/jokers')
 STAR_UTIL.load_items(STAR_UTIL.enabled_consumables, 'content/consumables')
 STAR_UTIL.load_items(STAR_UTIL.enabled_seals, 'content/seals')

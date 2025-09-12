@@ -1,8 +1,8 @@
 SMODS.Stake {
   name = "Amethyst Stake",
   key = "amethyst",
-  applied_stakes = { "gold" }, -- for now until amber stake exists
-  prefix_config = { applied_stakes = { mod = false } },
+  applied_stakes = { "amber" }, -- for now until amber stake exists
+  --prefix_config = { applied_stakes = { mod = false } },
 
   atlas = "stakes",
   pos = { x = 1, y = 0 },
