@@ -9,7 +9,7 @@ STAR_UTIL.enabled_jokers = {
   --'paradoxical_joker',
   --'creature',
   'rocket_pop',
-  --'microtransagolor',
+  'magolor',
   --'combo_pizza',
   'meta_knight',
   --'galacta_knight',
@@ -61,6 +61,7 @@ assert(SMODS.load_file('lib/patch.lua'))()
 -- Patches table
 STAR_UTIL.enabled_patches = {
   'generous',
+  --'efficient',
 }
 
 -- Quips table

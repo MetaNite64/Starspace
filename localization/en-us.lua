@@ -27,6 +27,16 @@ return {
           "end of round"
         }
       },
+      j_star_magolor = {
+        name = "Magolor",
+        text = {
+          "All cards and pack in shop",
+          "gain a {C:money}#1#{} discount.",
+          "Increase discount by {C:money}#2#{}",
+          "when {C:attention}Boss Blind{} is defeated",
+          "{C:inactive}(Maximum of {C:money}#3#{C:inactive}){}"
+        }
+      },
       j_star_meta_knight = {
         name = "Meta Knight",
         text = {
