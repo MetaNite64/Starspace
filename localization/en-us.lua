@@ -102,6 +102,13 @@ return {
       },
 
       -- Stickers
+      star_gigantic = {
+        name = "Gigantic",
+        text = {
+          "Takes up an",
+          "extra slot"
+        }
+      },
       star_isolated = {
         name = "Isolated",
         text = {
@@ -111,15 +118,15 @@ return {
           "Isolated cards"
         }
       },
-      star_gigantic = {
-        name = "Gigantic",
-        text = {
-          "Takes up an",
-          "extra slot"
-        }
-      },
 
       -- Patches
+      star_efficient = {
+        name = "Efficient",
+        text = {
+          "Takes up half",
+          "as many slots"
+        }
+      },
       star_generous = {
         name = "Generous",
         text = {
@@ -224,9 +231,10 @@ return {
       star_emerald_seal = "Emerald Seal",
       star_rose_gold_seal = "Rose Gold Seal",
 
-      star_isolated = "Isolated",
       star_gigantic = "Gigantic",
+      star_isolated = "Isolated",
 
+      star_efficient = "Efficient",
       star_generous = "Generous",
     },
     quips = {

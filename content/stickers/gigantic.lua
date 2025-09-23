@@ -19,8 +19,8 @@ SMODS.Sticker {
       else
         card.ability.extra_slots_used = card.ability.extra_slots_used - 1
       end
-    end
 
-    card.ability[self.key] = val
+      card.ability[self.key] = val
+    end
   end
 }

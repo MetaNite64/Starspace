@@ -61,7 +61,7 @@ assert(SMODS.load_file('lib/patch.lua'))()
 -- Patches table
 STAR_UTIL.enabled_patches = {
   'generous',
-  --'efficient',
+  'efficient',
 }
 
 -- Quips table
