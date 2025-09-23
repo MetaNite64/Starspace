@@ -9,6 +9,11 @@ SMODS.Joker {
   perishable_compat = true,
   pronouns = "he_him",
 
+  loc_vars = function(self, info_queue, card)
+    info_queue[#info_queue + 1] = G.P_CENTERS.m_steel
+    info_queue[#info_queue + 1] = G.P_CENTERS.m_gold
+  end,
+
   calculate = function(self, card, context)
     -- create random steel card at start of blind
     if context.setting_blind then
