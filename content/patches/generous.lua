@@ -3,6 +3,7 @@ STAR_UTIL.Patch {
   badge_colour = HEX("B18F43"),
   atlas = "card_mods",
   pos = { x = 1, y = 2 },
+  patch_sticker = "rental",
 
   should_apply = false,
 

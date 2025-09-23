@@ -1,11 +1,19 @@
 -- thanks Paperback. I referenced pretty much everything from there lmao
+local function collect_patches()
+  local patches = {}
+  for i, v in pairs(SMODS.Stickers) do
+    if v.patch_sticker then table.insert(patches, v) end
+  end
+  return patches
+end
+
 SMODS.current_mod.custom_collection_tabs = function()
   return {
     UIBox_button({
       button = "your_collection_star_patches",
       id = "your_collection_star_patches",
       label = { localize("star_patches") },
-      count = { tally = 1, of = 1 },
+      count = { tally = #STAR_UTIL.enabled_patches, of = #STAR_UTIL.enabled_patches },
       minw = 5,
       minh = 1
     })
@@ -13,8 +21,7 @@ SMODS.current_mod.custom_collection_tabs = function()
 end
 
 local function patches_ui()
-  local patches = { SMODS.Stickers["star_generous"] }
-
+  local patches = collect_patches()
   return SMODS.card_collection_UIBox(patches, { 5, 5 }, {
     snap_back = true,
     hide_single_page = true,
