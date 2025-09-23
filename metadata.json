@@ -9,7 +9,6 @@
 	"badge_text_colour": "00E4FF",
 	"version": "0.0.0",
 	"dependencies": [
-		"Steamodded (>=1.0.0~BETA-0827)",
-		"Talisman (>=2.4)"
+		"Steamodded (>=1.0.0~BETA-0827)"
 	],
 }
