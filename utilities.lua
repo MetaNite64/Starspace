@@ -114,7 +114,14 @@ end
 
 -- check if a sticker is a patch
 function STAR_UTIL.is_patch(name)
-  return SMODS.Stickers["star_" .. name] and SMODS.Stickers["star_" .. name].patch_sticker
+  local patches = {}
+  for i, v in pairs(SMODS.Stickers) do
+    if v.patch_sticker then patches[#patches + 1] = i end
+  end
+  for i, v in ipairs(patches) do
+    if name == v then return true end
+  end
+  return false
 end
 
 -- optional features
