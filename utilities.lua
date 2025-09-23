@@ -99,24 +99,25 @@ if next(SMODS.find_mod("cardpronouns")) then
   }
 end
 
+-- custom colors
 loc_colour()
 for i, v in pairs(STAR_UTIL.colors) do
   G.ARGS.LOC_COLOURS["star_" .. i] = v
 end
 
+-- load items function
 function STAR_UTIL.load_items(names, path)
   for i = 1, #names do
     assert(SMODS.load_file(path .. '/' .. names[i] .. '.lua'))()
   end
 end
 
+-- check if a sticker is a patch
 function STAR_UTIL.is_patch(name)
-  for _, v in ipairs(STAR_UTIL.enabled_patches) do
-    if "star_" .. v == name then return true end
-  end
-  return false
+  return SMODS.Stickers["star_" .. name] and SMODS.Stickers["star_" .. name].patch_sticker
 end
 
+-- optional features
 SMODS.current_mod.optional_features = function()
   return {
     retrigger_joker = true
