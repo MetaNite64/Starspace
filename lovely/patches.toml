@@ -2,7 +2,7 @@
 version = "1.0.0"
 priority = 0
 
-# 50/50 chance to replace stickers with their respective patches
+# 50/50 chance to replace vanilla stickers with their respective patches
 [[patches]]
 [patches.pattern]
 target = "functions/common_events.lua"
@@ -14,5 +14,28 @@ if pseudorandom("patch_roll") > 0.5 then
 	card:set_rental(true)
 else
 	SMODS.Stickers["star_generous"]:apply(card, true)
+end
+'''
+
+# 50/50 chance to replace modded stickers FROM SHOP with their respective patches
+[[patches]]
+[patches.pattern]
+target = "functions/common_events.lua"
+pattern = "sticker:apply(card, true)"
+position = "at"
+match_indent = true
+payload = '''
+local patched = false
+if (area == G.shop_jokers or area == G.pack_cards) and pseudorandom("patch_roll") > 0.5 then
+	for i, j in pairs(SMODS.Stickers) do
+		if j.patch_sticker and j.patch_sticker == sticker.key then
+			j:apply(card, true)
+			patched = true
+			break
+		end
+	end
+end
+if not patched then
+	sticker:apply(card, true)
 end
 '''
