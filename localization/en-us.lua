@@ -189,7 +189,25 @@ return {
           "{s:0.8}Applies Amber Stake{}"
         }
       }
-    }
+    },
+    Voucher = {
+      v_clearance_sale = {
+        name = "Clearance Sale",
+        text = {
+          "All cards and packs",
+          "in shop gain a",
+          "{C:money}#1#%{} discount"
+        }
+      },
+      v_liquidation = {
+        name = "Liquidation",
+        text = {
+          "All cards and packs in",
+          "shop gain an additional",
+          "{C:money}#1#%{} discount"
+        }
+      }
+    },
   },
   misc = {
     dictionary = {
