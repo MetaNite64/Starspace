@@ -18,6 +18,15 @@ return {
           "the right #1# times"
         }
       },
+      j_star_galacta_knight = {
+        name = "Galacta Knight",
+        text = {
+          "All {C:attention}enhanced{} cards count",
+          "as {C:attention}Gold{} and {C:attention}Steel{} cards.",
+          "{C:attention}Retrigger{} all {C:attention}enhanced{}",
+          "cards {C:attention}#1#{} times"
+        }
+      },
       j_star_glorp = {
         name = "Glorp",
         text = {

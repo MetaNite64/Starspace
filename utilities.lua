@@ -12,7 +12,7 @@ STAR_UTIL.enabled_jokers = {
   'magolor',
   --'combo_pizza',
   'meta_knight',
-  --'galacta_knight',
+  'galacta_knight',
   --'bacon_burger',
   'shard',
   --'scrap_machete',
@@ -120,6 +120,7 @@ end
 -- optional features
 SMODS.current_mod.optional_features = function()
   return {
-    retrigger_joker = true
+    retrigger_joker = true,
+    quantum_enhancements = true
   }
 end
