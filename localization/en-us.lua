@@ -11,6 +11,14 @@ return {
           "{C:inactive}(Currently {X:chips,C:white}X#2#{C:inactive} Chips)"
         }
       },
+      j_star_bacon_burger = {
+        name = "Bacon Burger",
+        text = {
+          "{X:mult,C:white}X#2#{} Mult",
+          "{X:chips,C:white}X#1#{} Chips",
+          "Eaten after {C:attention}#3#{} hands"
+        }
+      },
       j_star_crystal = {
         name = "Crystal",
         text = {
@@ -232,6 +240,7 @@ return {
       k_star_cosmic = "Cosmic",
       k_star_galactic = "Galactic",
       star_patches = "Patches",
+      bacon_burger_eat = "Nomf...",
     },
     labels = {
       k_star_cosmic = "Cosmic",

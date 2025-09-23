@@ -13,7 +13,7 @@ STAR_UTIL.enabled_jokers = {
   --'combo_pizza',
   'meta_knight',
   'galacta_knight',
-  --'bacon_burger',
+  'bacon_burger',
   'shard',
   --'scrap_machete',
   --'writh_wrath',
