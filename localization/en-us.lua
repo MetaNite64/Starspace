@@ -115,6 +115,14 @@ return {
     },
     Other = {
       -- Seals
+      star_bronze_seal = {
+        name = "Bronze Seal",
+        text = {
+          "{C:attention}Level up{} the played hand",
+          "once for every other {C:attention}seal{}",
+          "in the {C:attention}scoring hand{}"
+        }
+      },
       star_emerald_seal = {
         name = "Emerald Seal",
         text = {
@@ -260,6 +268,7 @@ return {
       k_star_cosmic = "Cosmic",
       k_star_galactic = "Galactic",
 
+      star_bronze_seal = "Bronze Seal",
       star_emerald_seal = "Emerald Seal",
       star_rose_gold_seal = "Rose Gold Seal",
 

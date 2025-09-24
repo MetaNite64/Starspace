@@ -74,7 +74,7 @@ STAR_UTIL.enabled_consumables = {
 -- Seals table
 STAR_UTIL.enabled_seals = {
   'rose_gold',
-  --'bronze',
+  'bronze',
   'emerald',
 }
 
@@ -108,6 +108,7 @@ STAR_UTIL.enabled_quips = {
 -- custom colors
 STAR_UTIL.colors = {
   rose_gold = HEX("DA9592"),
+  bronze = HEX("ED8F49"),
   emerald = HEX("67CF83")
 }
 
