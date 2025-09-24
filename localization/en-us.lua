@@ -58,10 +58,14 @@ return {
       j_star_meta_knight = {
         name = "Meta Knight",
         text = {
-          "Add one {C:attention}Steel{} card to the deck",
-          "when {C:attention}Blind{} is selected.",
-          "All played {C:attention}Steel{} cards become",
-          "{C:attention}Gold{} cards when scored"
+          {
+            "Add one {C:attention}Steel{} card to the deck",
+            "when {C:attention}Blind{} is selected"
+          },
+          {
+            "All played {C:attention}Steel{} cards become",
+            "{C:attention}Gold{} cards when scored"
+          }
         }
       },
       j_star_rocket_pop = {
