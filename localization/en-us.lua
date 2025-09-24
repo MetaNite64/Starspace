@@ -68,6 +68,15 @@ return {
           }
         }
       },
+      j_star_paradoxical_joker = {
+        name = "Paradoxical Joker",
+        text = {
+          "This Joker gains {C:mult}+#1#{} Mult",
+          "if played poker hand",
+          "is a {C:attention}secret hand{}",
+          "{C:inactive}(Currently {C:mult}+#2#{C:inactive} Mult)"
+        }
+      },
       j_star_rocket_pop = {
         name = "Rocket Pop",
         text = {

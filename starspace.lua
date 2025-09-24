@@ -1,4 +1,5 @@
-assert(SMODS.load_file('utilities.lua'))()
+assert(SMODS.load_file('lib/utilities.lua'))()
+assert(SMODS.load_file('lib/hooks.lua'))()
 
 -- placeholder atlas
 SMODS.Atlas {
