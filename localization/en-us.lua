@@ -29,10 +29,11 @@ return {
       j_star_galacta_knight = {
         name = "Galacta Knight",
         text = {
-          "All {C:attention}enhanced{} cards count",
-          "as {C:attention}Gold{} and {C:attention}Steel{} cards.",
-          "{C:attention}Retrigger{} all {C:attention}enhanced{}",
-          "cards {C:attention}#1#{} times"
+          { "{C:attention}Glass{} cards never break" },
+          {
+            "{C:attention}Lucky{} cards' probabilities",
+            "are guaranteed"
+          }
         }
       },
       j_star_glorp = {

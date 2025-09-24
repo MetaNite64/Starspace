@@ -2,38 +2,30 @@ SMODS.Joker {
   key = "galacta_knight",
   atlas = "jokers",
   pos = { x = 2, y = 2 },
-  config = { extra = {
-    repetitions = 3
-  } },
-  rarity = "star_galactic",
-  cost = 40,
-  blueprint_compat = true,
+  rarity = "star_cosmic",
+  cost = 9,
+  blueprint_compat = false,
   eternal_compat = true,
   perishable_compat = true,
   pronouns = "he_him",
 
   loc_vars = function(self, info_queue, card)
-    info_queue[#info_queue + 1] = G.P_CENTERS.m_gold
-    info_queue[#info_queue + 1] = G.P_CENTERS.m_steel
-    return { vars = {
-      card.ability.extra.repetitions
-    } }
+    info_queue[#info_queue + 1] = G.P_CENTERS.m_glass
+    info_queue[#info_queue + 1] = G.P_CENTERS.m_lucky
   end,
 
   calculate = function(self, card, context)
-    if context.check_enhancement and not context.blueprint then
-      if context.other_card.ability.set == "Enhanced" then
+    if context.fix_probability and not context.blueprint then
+      if context.identifier == "lucky_mult" or context.identifier == "lucky_money" then
         return {
-          m_gold = true,
-          m_steel = true
+          numerator = context.denominator
         }
       end
-    end
-
-    if context.repetition and context.other_card.ability.set == "Enhanced" then
-      return {
-        repetitions = card.ability.extra.repetitions
-      }
+      if context.identifier == "glass" then
+        return {
+          numerator = 0
+        }
+      end
     end
   end
 }
