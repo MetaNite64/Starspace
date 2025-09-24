@@ -193,6 +193,14 @@ return {
       },
     },
     Spectral = {
+      c_star_conductivity = {
+        name = "Conductivity",
+        text = {
+          "Add a {C:star_bronze}Bronze Seal{}",
+          "to {C:attention}1{} selected",
+          "card in your hand"
+        }
+      },
       c_star_eclipse = {
         name = "Eclipse",
         text = {

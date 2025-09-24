@@ -66,7 +66,7 @@ STAR_UTIL.enabled_consumables = {
   --'epitome',
   --'retribution',
   'eclipse',
-  --'conductivity',
+  'conductivity',
   'gemstone',
   'starspace',
 }
@@ -111,6 +111,10 @@ STAR_UTIL.colors = {
   bronze = HEX("ED8F49"),
   emerald = HEX("67CF83")
 }
+loc_colour()
+for i, v in pairs(STAR_UTIL.colors) do
+  G.ARGS.LOC_COLOURS["star_" .. i] = v
+end
 
 -- custom pronoun sets
 if next(SMODS.find_mod("cardpronouns")) then
@@ -132,12 +136,6 @@ if next(SMODS.find_mod("cardpronouns")) then
     end,
     key = "he_it"
   }
-end
-
--- custom colors
-loc_colour()
-for i, v in pairs(STAR_UTIL.colors) do
-  G.ARGS.LOC_COLOURS["star_" .. i] = v
 end
 
 -- load items function
