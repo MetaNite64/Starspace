@@ -2,7 +2,6 @@ SMODS.Joker {
   key = "galacta_knight",
   atlas = "jokers",
   pos = { x = 2, y = 2 },
-  soul_pos = { x = 3, y = 2 },
   config = { extra = {
     repetitions = 3
   } },
