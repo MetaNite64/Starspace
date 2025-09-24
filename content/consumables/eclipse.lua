@@ -6,6 +6,10 @@ SMODS.Consumable {
 
   config = { extra = { seal = "star_rose_gold" }, max_highlighted = 1 },
 
+  loc_vars = function(self, info_queue, card)
+    info_queue[#info_queue + 1] = G.P_SEALS.star_rose_gold
+  end,
+
   use = function(self, card, area, copier)
     local conv_card = G.hand.highlighted[1]
     G.E_MANAGER:add_event(Event({
