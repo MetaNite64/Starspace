@@ -43,7 +43,7 @@ STAR_UTIL.enabled_jokers = {
   --'aven',
   --'sample_size',
   --'forager',
-  --'+2',
+  'plus2',
   --'death_by_a_thousand_meows',
   --'lesbian_joker',
   --'jimbo',

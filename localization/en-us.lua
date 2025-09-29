@@ -77,6 +77,12 @@ return {
           "{C:inactive}(Currently {C:mult}+#2#{C:inactive} Mult)"
         }
       },
+      j_star_plus2 = {
+        name = "+2",
+        text = {
+          "{s:10,E:1,C:star_plus2}+2{}"
+        }
+      },
       j_star_rocket_pop = {
         name = "Rocket Pop",
         text = {
