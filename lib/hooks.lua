@@ -18,3 +18,10 @@ function Game.init_game_object(self)
 
   return ret
 end
+
+-- Card:flip hook: don't flip a joker if it has the Brave patch
+local flip_ref = Card.flip
+function Card.flip(self)
+  if self.facing == 'front' and self.ability and self.ability.star_brave then return end
+  flip_ref(self)
+end

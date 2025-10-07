@@ -95,6 +95,7 @@ assert(SMODS.load_file('lib/patch.lua'))()
 -- Patches table
 STAR_UTIL.enabled_patches = {
   'generous',
+  'brave',
   'efficient',
 }
 
@@ -162,4 +163,12 @@ SMODS.current_mod.optional_features = function()
   return {
     retrigger_joker = true,
   }
+end
+
+-- debuff stuff
+SMODS.current_mod.set_debuff = function(card)
+  -- never debuff brave cards
+  if card.ability and card.ability.star_brave then
+    return "prevent_debuff"
+  end
 end

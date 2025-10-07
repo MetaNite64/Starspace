@@ -165,6 +165,13 @@ return {
       },
 
       -- Patches
+      star_brave = {
+        name = "Brave",
+        text = {
+          "Cannot be flipped",
+          "or debuffed"
+        }
+      },
       star_efficient = {
         name = "Efficient",
         text = {
@@ -289,6 +296,7 @@ return {
       star_gigantic = "Gigantic",
       star_isolated = "Isolated",
 
+      star_brave = "Brave",
       star_efficient = "Efficient",
       star_generous = "Generous",
     },
