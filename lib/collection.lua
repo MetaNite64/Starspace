@@ -8,12 +8,13 @@ local function collect_patches()
 end
 
 SMODS.current_mod.custom_collection_tabs = function()
+  local patches = collect_patches()
   return {
     UIBox_button({
       button = "your_collection_star_patches",
       id = "your_collection_star_patches",
       label = { localize("star_patches") },
-      count = { tally = #STAR_UTIL.enabled_patches, of = #STAR_UTIL.enabled_patches },
+      count = { tally = #patches, of = #patches },
       minw = 5,
       minh = 1
     })
@@ -66,9 +67,4 @@ end
 local stickers_ui_ref = create_UIBox_your_collection_stickers
 create_UIBox_your_collection_stickers = function()
   return no_patches(stickers_ui_ref)
-end
-
-local other_obj_ref = create_UIBox_Other_GameObjects
-create_UIBox_Other_GameObjects = function()
-  return no_patches(other_obj_ref)
 end
