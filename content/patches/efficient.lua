@@ -5,8 +5,6 @@ STAR_UTIL.Patch {
   pos = { x = 4, y = 2 },
   patch_sticker = "star_gigantic",
 
-  should_apply = false,
-
   apply = function(self, card, val)
     if not (card.config.center_key == 'c_base' and not card.children.front) then
       if val then

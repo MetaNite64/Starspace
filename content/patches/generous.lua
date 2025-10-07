@@ -5,8 +5,6 @@ STAR_UTIL.Patch {
   pos = { x = 1, y = 2 },
   patch_sticker = "rental",
 
-  should_apply = false,
-
   calculate = function(self, card, context)
     if context.end_of_round and not context.repetition and not context.individual then
       return {
