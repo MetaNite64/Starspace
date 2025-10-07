@@ -1,14 +1,17 @@
 -- thanks Paperback. I referenced pretty much everything from there lmao
-local function collect_patches()
+local function collect_patches(count)
   local patches = {}
   for i, v in pairs(SMODS.Stickers) do
-    if v.patch_sticker then table.insert(patches, v) end
+    if v.patch_sticker then
+      if count then table.insert(patches, v)
+      else patches[i] = v end
+    end
   end
   return patches
 end
 
 SMODS.current_mod.custom_collection_tabs = function()
-  local patches = collect_patches()
+  local patches = collect_patches(true)
   return {
     UIBox_button({
       button = "your_collection_star_patches",
