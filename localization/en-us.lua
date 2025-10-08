@@ -126,6 +126,16 @@ return {
           "Retrigger the leftmost",
           "{C:attention}Joker{} #1# times"
         }
+      },
+      j_star_susie = {
+        name = "Susie",
+        text = {
+          "All playing card chip",
+          "values are {C:attention}halved{}.",
+          "When a card {C:attention}scores{}, this Joker",
+          "gains that card's chip value",
+          "{C:inactive}(Currently {C:chips}+#1#{C:inactive} Chips)"
+        }
       }
     },
     Other = {
