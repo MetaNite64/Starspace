@@ -19,6 +19,15 @@ return {
           "Eaten after {C:attention}#3#{} hands"
         }
       },
+      j_star_combo_pizza = {
+        name = "Combo Pizza",
+        text = {
+          "Randomly gives 2 of 5 effects:",
+          "{X:chips,C:white}X#1#{} Chips, {X:mult,C:white}X#2#{} Mult,",
+          "{C:chips}+#3#{} Chips, {C:mult}+#4#{} Mult, or {C:money}+$#5#{}",
+          "Eaten in {C:attention}#6#{} rounds"
+        }
+      },
       j_star_crystal = {
         name = "Crystal",
         text = {
@@ -284,6 +293,7 @@ return {
       k_star_galactic = "Galactic",
       star_patches = "Patches",
       bacon_burger_eat = "Nomf...",
+      combo_pizza_eat = "Nomf...",
     },
     labels = {
       k_star_cosmic = "Cosmic",

@@ -10,7 +10,7 @@ STAR_UTIL.enabled_jokers = {
   'paradoxical_joker',
   --'creature',
   'rocket_pop',
-  --'combo_pizza',
+  'combo_pizza',
   'magolor',
   'meta_knight',
   'galacta_knight',
