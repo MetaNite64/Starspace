@@ -71,6 +71,11 @@ STAR_UTIL.enabled_consumables = {
   'starspace',
 }
 
+-- Poker hands table
+STAR_UTIL.enabled_hands = {
+  'flash',
+}
+
 -- Seals table
 STAR_UTIL.enabled_seals = {
   'rose_gold',
@@ -78,16 +83,16 @@ STAR_UTIL.enabled_seals = {
   'emerald',
 }
 
--- Stickers table
-STAR_UTIL.enabled_stickers = {
-  'isolated',
-  'gigantic',
-}
-
 -- Stakes table
 STAR_UTIL.enabled_stakes = {
   'amber',
   'amethyst',
+}
+
+-- Stickers table
+STAR_UTIL.enabled_stickers = {
+  'isolated',
+  'gigantic',
 }
 
 -- load patches

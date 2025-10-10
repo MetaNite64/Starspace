@@ -320,6 +320,14 @@ return {
       star_efficient = "Efficient",
       star_generous = "Generous",
     },
+    poker_hands = {
+      ["star_flash"] = "Flash",
+    },
+    poker_hand_descriptions = {
+      ["star_flash"] = {
+        "4 cards with different suits"
+      }
+    },
     quips = {
       star_astro_win_1 = { "TETRATION!!!!!" },
       star_astro_win_2 = { "Look!", "It's me!" },
