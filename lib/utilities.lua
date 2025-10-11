@@ -1,5 +1,3 @@
-STAR_UTIL = {}
-
 -- Joker table
 STAR_UTIL.enabled_jokers = {
   'astro',
@@ -95,8 +93,6 @@ STAR_UTIL.enabled_stickers = {
   'gigantic',
 }
 
--- load patches
-assert(SMODS.load_file('lib/patch.lua'))()
 -- Patches table
 STAR_UTIL.enabled_patches = {
   'generous',

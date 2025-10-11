@@ -17,6 +17,9 @@ SMODS.Joker {
   eternal_compat = true,
   perishable_compat = true,
   pronouns = "it_its",
+  pools = {
+    friends_of_astro = true
+  },
 
   config = { extra = {
     current_context = "joker_main",
