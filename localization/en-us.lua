@@ -1,6 +1,15 @@
 return {
   descriptions = {
     Joker = {
+      j_star_artful_joker = {
+        name = "Artful Joker",
+        text = {
+          "{C:attention}+#1#{} hand size if",
+          "a hand containing",
+          "a {C:attention}#2#{}",
+          "was played this round"
+        }
+      },
       j_star_astro = {
         name = "Astro",
         text = {
@@ -54,10 +63,19 @@ return {
           "{C:inactive}(Must have room){}"
         }
       },
+      j_star_deceitful_joker = {
+        name = "Deceitful Joker",
+        text = {
+          "{C:attention}+#1#{} hand size if",
+          "a hand containing",
+          "a {C:attention}#2#{}",
+          "was played this round"
+        }
+      },
       j_star_fluffy_joker = {
         name = "Fluffy Joker",
         text = {
-          "{C:mult}+#1#{} if played",
+          "{C:mult}+#1#{} Mult if played",
           "hand contains",
           "a {C:attention}#2#{}"
         }
@@ -79,6 +97,15 @@ return {
           "{C:attention}context.#2#{},",
           "context changes at",
           "end of round"
+        }
+      },
+      j_star_guileful_joker = {
+        name = "Guileful Joker",
+        text = {
+          "{C:attention}+#1#{} hand size if",
+          "a hand containing",
+          "a {C:attention}#2#{}",
+          "was played this round"
         }
       },
       j_star_magolor = {
@@ -117,6 +144,15 @@ return {
         name = "+2",
         text = {
           "{s:10,E:1,C:star_plus2}+2{}"
+        }
+      },
+      j_star_prideful_joker = {
+        name = "Prideful Joker",
+        text = {
+          "{C:attention}+#1#{} hand size if",
+          "a hand containing",
+          "a {C:attention}#2#{}",
+          "was played this round"
         }
       },
       j_star_rocket_pop = {
@@ -172,6 +208,15 @@ return {
           "a {C:attention}#2#{}"
         }
       },
+      j_star_sleightful_joker = {
+        name = "Sleightful Joker",
+        text = {
+          "{C:attention}+#1#{} hand size if",
+          "a hand containing",
+          "a {C:attention}#2#{}",
+          "was played this round"
+        }
+      },
       j_star_susie = {
         name = "Susie",
         text = {
@@ -188,6 +233,15 @@ return {
           "{X:purple,C:white}X#1#{} Chips and Mult if",
           "played hand contains",
           "a {C:attention}#2#{}"
+        }
+      },
+      j_star_thoughtful_joker = {
+        name = "Thoughtful Joker",
+        text = {
+          "{C:attention}+#1#{} hand size if",
+          "a hand containing",
+          "a {C:attention}#2#{}",
+          "was played this round"
         }
       },
     },
@@ -370,6 +424,9 @@ return {
       star_patches = "Patches",
       bacon_burger_eat = "Nomf...",
       combo_pizza_eat = "Nomf...",
+    },
+    v_dictionary = {
+      a_handsize = "+#1# Hand Size"
     },
     labels = {
       k_star_cosmic = "Cosmic",
