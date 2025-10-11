@@ -224,6 +224,17 @@ return {
         }
       },
     },
+    Planet = {
+      c_star_wolftopia = {
+        name = "Wolftopia",
+        text = {
+          "({V:1}lvl.#1#{}) Level up",
+          "{C:attention}#2#{}",
+          "{C:mult}+#3#{} Mult and",
+          "{C:chips}+#4#{} Chips"
+        }
+      }
+    },
     Spectral = {
       c_star_conductivity = {
         name = "Conductivity",
