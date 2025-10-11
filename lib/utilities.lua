@@ -17,7 +17,7 @@ STAR_UTIL.enabled_jokers = {
   'bacon_burger',
   'scrap_machete',
   --'sage_halo',
-  --'crystal_goggles',
+  'crystal_goggles',
   --'writh_wrath',
   --'astronomical_joker',
   --'chronological_joker',

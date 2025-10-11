@@ -45,6 +45,15 @@ return {
           "the right #1# times"
         }
       },
+      j_star_crystal_goggles = {
+        name = "Crystal's Goggles",
+        text = {
+          "On the {C:attention}final hand{} of the round,",
+          "randomly create a {V:1}#1#{}, {V:2}#2#{}",
+          "or {V:3}#3#{}",
+          "{C:inactive}(Must have room){}"
+        }
+      },
       j_star_galacta_knight = {
         name = "Galacta Knight",
         text = {
@@ -331,6 +340,7 @@ return {
       k_plus_steel_ex = "+1 Steel",
       k_plus_trigger_ex = "+1 Trigger",
       k_machete_ex = "Scrapped!",
+      k_goggles_ex = "Crafted!",
       k_star_cosmic = "Cosmic",
       k_star_galactic = "Galactic",
       star_patches = "Patches",
