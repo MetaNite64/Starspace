@@ -353,10 +353,11 @@ return {
       star_generous = "Generous",
     },
     poker_hands = {
-      ["star_flash"] = "Flash",
+      star_flash = "Flash",
+      star_royal_flash = "Royal Flash",
     },
     poker_hand_descriptions = {
-      ["star_flash"] = {
+      star_flash = {
         "4 cards with different suits"
       }
     },
