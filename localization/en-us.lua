@@ -42,8 +42,8 @@ return {
         text = {
           "This Joker gains {C:chips}+#1#{} Chips",
           "and {C:mult}+#2#{} Mult for every",
-          "{C:attention}Joker{} owned at the",
-          "end of the round",
+          "{C:attention}Joker{} owned when",
+          "{C:attention}Boss Blind{} is defeated",
           "{C:inactive}(Currently {C:chips}+#3#{C:inactive} Chips, {C:mult}+#4#{C:inactive} Mult){}"
         }
       },
