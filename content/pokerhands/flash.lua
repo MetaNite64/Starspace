@@ -75,7 +75,16 @@ SMODS.PokerHandPart {
       end
     end
 
-    if #ret >= 4 then return { ret } end
+    -- break down to just the top 4 ranks
+    table.sort(ret, function(a, b)
+      return a:get_id() >= b:get_id()
+    end)
+
+    while #ret > 4 do
+      table.remove(ret)
+    end
+
+    if #ret == 4 then return { ret } end
     return {}
   end
 }
