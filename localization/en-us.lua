@@ -57,7 +57,7 @@ return {
       j_star_magolor = {
         name = "Magolor",
         text = {
-          "All cards and pack in shop",
+          "All cards and packs in shop",
           "gain a {C:money}#1#{} discount.",
           "Increase discount by {C:money}#2#{}",
           "when {C:attention}Boss Blind{} is defeated",
