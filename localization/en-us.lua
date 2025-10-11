@@ -130,6 +130,16 @@ return {
           "{C:inactive}(Currently {X:mult,C:white}X#2#{C:inactive} Mult)"
         }
       },
+      j_star_scrap_machete = {
+        name = "Scrap's Machete",
+        text = {
+          "If {C:attention}first hand{} of round is a single {C:attention}card{},",
+          "destroy it and create 3 new cards: one with",
+          "the same {C:attention}rank{}, one with the same {C:attention}suit{},",
+          "and one with the same",
+          "{C:attention}edition, enhancement, and seal{}"
+        }
+      },
       j_star_shard = {
         name = "Shard",
         text = {
@@ -320,6 +330,7 @@ return {
     dictionary = {
       k_plus_steel_ex = "+1 Steel",
       k_plus_trigger_ex = "+1 Trigger",
+      k_machete_ex = "Scrapped!",
       k_star_cosmic = "Cosmic",
       k_star_galactic = "Galactic",
       star_patches = "Patches",

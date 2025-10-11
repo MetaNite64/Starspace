@@ -15,7 +15,7 @@ STAR_UTIL.enabled_jokers = {
   --'kirby',
   'susie',
   'bacon_burger',
-  --'scrap_machete',
+  'scrap_machete',
   --'sage_halo',
   --'crystal_goggles',
   --'writh_wrath',
