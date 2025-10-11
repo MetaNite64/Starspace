@@ -2,9 +2,6 @@ SMODS.Joker {
   key = "crystal",
   atlas = "jokers",
   pos = { x = 2, y = 0 },
-  config = { extra = {
-    retriggers = 3
-  } },
   rarity = "star_cosmic",
   cost = 18,
   blueprint_compat = false,
@@ -14,12 +11,6 @@ SMODS.Joker {
   pools = {
     friends_of_astro = true
   },
-
-  loc_vars = function(self, info_queue, card)
-    return { vars = {
-      card.ability.extra.retriggers
-    } }
-  end,
 
   calculate = function(self, card, context)
     if context.retrigger_joker_check and context.other_card ~= card and not context.blueprint then
@@ -32,7 +23,7 @@ SMODS.Joker {
       end
       if other_joker == context.other_card then
         return {
-          repetitions = card.ability.extra.retriggers
+          repetitions = 2
         }
       end
     end

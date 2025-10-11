@@ -51,7 +51,7 @@ return {
         name = "Crystal",
         text = {
           "Retrigger the {C:attention}Joker{} to",
-          "the right #1# times"
+          "the right twice"
         }
       },
       j_star_crystal_goggles = {
@@ -197,7 +197,7 @@ return {
         name = "Shard",
         text = {
           "Retrigger the leftmost",
-          "{C:attention}Joker{} #1# times"
+          "{C:attention}Joker{} twice"
         }
       },
       j_star_shy_joker = {
