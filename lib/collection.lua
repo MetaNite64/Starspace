@@ -58,7 +58,7 @@ local function no_patches(func, args)
   end
 
   local ret = nil
-  if next(args) then
+  if args and next(args) then
     ret = func(unpack(args))
   else
     ret = func()
