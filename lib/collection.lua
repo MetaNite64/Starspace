@@ -48,7 +48,7 @@ G.FUNCS.your_collection_star_patches = function()
 end
 
 -- take patches out of the Stickers list for the duration of a function call
-local function no_patches(func)
+local function no_patches(func, args)
   local removed = {}
   for k, v in pairs(SMODS.Stickers) do
     if STAR_UTIL.is_patch(k) then
@@ -57,7 +57,12 @@ local function no_patches(func)
     end
   end
 
-  local ret = func()
+  local ret = nil
+  if next(args) then
+    ret = func(unpack(args))
+  else
+    ret = func()
+  end
 
   for k, v in pairs(removed) do
     SMODS.Stickers[k] = v
@@ -70,4 +75,12 @@ end
 local stickers_ui_ref = create_UIBox_your_collection_stickers
 create_UIBox_your_collection_stickers = function()
   return no_patches(stickers_ui_ref)
+end
+
+local mods_collection_tally_ref = modsCollectionTally
+modsCollectionTally = function(pool, set)
+  if G.ACTIVE_MOD_UI then
+    return no_patches(mods_collection_tally_ref, { pool, set })
+  end
+  return mods_collection_tally_ref(pool, set)
 end
