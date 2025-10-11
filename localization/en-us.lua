@@ -54,6 +54,14 @@ return {
           "{C:inactive}(Must have room){}"
         }
       },
+      j_star_fluffy_joker = {
+        name = "Fluffy Joker",
+        text = {
+          "{C:mult}+#1#{} if played",
+          "hand contains",
+          "a {C:attention}#2#{}"
+        }
+      },
       j_star_galacta_knight = {
         name = "Galacta Knight",
         text = {
@@ -156,6 +164,14 @@ return {
           "{C:attention}Joker{} #1# times"
         }
       },
+      j_star_shy_joker = {
+        name = "Shy Joker",
+        text = {
+          "{C:chips}+#1#{} Chips if played",
+          "hand contains",
+          "a {C:attention}#2#{}"
+        }
+      },
       j_star_susie = {
         name = "Susie",
         text = {
@@ -165,7 +181,15 @@ return {
           "gains that card's chip value",
           "{C:inactive}(Currently {C:chips}+#1#{C:inactive} Chips)"
         }
-      }
+      },
+      j_star_the_spacial = {
+        name = "The Spacial",
+        text = {
+          "{X:purple,C:white}X#1#{} Chips and Mult if",
+          "played hand contains",
+          "a {C:attention}#2#{}"
+        }
+      },
     },
     Other = {
       -- Seals
