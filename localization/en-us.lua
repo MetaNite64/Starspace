@@ -320,6 +320,13 @@ return {
           "end of round"
         }
       },
+      star_immortal = {
+        name = "Immortal",
+        text = {
+          "Can't be destroyed",
+          "{C:inactive}(Can still be sold){}"
+        }
+      },
 
       -- Stake Stickers
       star_amber_sticker = {
@@ -450,6 +457,7 @@ return {
       star_brave = "Brave",
       star_efficient = "Efficient",
       star_generous = "Generous",
+      star_immortal = "Immortal",
     },
     poker_hands = {
       star_flash = "Flash",

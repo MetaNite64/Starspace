@@ -78,6 +78,15 @@ function Card.flip(self)
   flip_ref(self)
 end
 
+-- SMODS.is_eternal hook: Immortal patch counts as eternal
+local eternal_ref = SMODS.is_eternal
+function SMODS.is_eternal(card, trigger)
+  if card.ability.star_immortal and (next(trigger) and not trigger.from_sell) then
+    return true
+  end
+  return eternal_ref(card, trigger)
+end
+
 -- Card:get_chip_bonus hook: halve chip bonus for every copy of Susie present
 local gcb_ref = Card.get_chip_bonus
 function Card.get_chip_bonus(self)
