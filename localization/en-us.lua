@@ -244,6 +244,14 @@ return {
           "was played this round"
         }
       },
+      j_star_writh_wrath = {
+        name = "Writh Wrath",
+        text = {
+          "When {C:attention}Boss Blind{} is selected,",
+          "create a {C:dark_edition}Negative{}",
+          "{C:common}Common{} {C:attention}Joker{}"
+        }
+      },
     },
     Other = {
       -- Seals

@@ -18,7 +18,7 @@ STAR_UTIL.enabled_jokers = {
   'scrap_machete',
   --'sage_halo',
   'crystal_goggles',
-  --'writh_wrath',
+  'writh_wrath',
   --'astronomical_joker',
   --'chronological_joker',
   --'angelic_joker',
