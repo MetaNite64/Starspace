@@ -6,7 +6,7 @@ STAR_UTIL.enabled_jokers = {
   'crystal',
   'shard',
   'paradoxical_joker',
-  --'creature',
+  'creature',
   'rocket_pop',
   'combo_pizza',
   'magolor',

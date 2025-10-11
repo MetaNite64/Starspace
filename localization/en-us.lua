@@ -28,6 +28,16 @@ return {
           "Eaten in {C:attention}#6#{} rounds"
         }
       },
+      j_star_creature = {
+        name = "The Creature",
+        text = {
+          "This Joker gains {C:chips}+#1#{} Chips",
+          "and {C:mult}+#2#{} Mult for every",
+          "{C:attention}Joker{} owned at the",
+          "end of the round",
+          "{C:inactive}(Currently {C:chips}+#3#{C:inactive} Chips, {C:mult}+#4#{C:inactive} Mult){}"
+        }
+      },
       j_star_crystal = {
         name = "Crystal",
         text = {
