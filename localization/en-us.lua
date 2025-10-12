@@ -390,6 +390,16 @@ return {
           "card in your hand"
         }
       },
+      c_star_illusioned = {
+        name = "The Illusioned",
+        text = {
+          "Creates the last",
+          "{C:spectral}Spectral{} card used",
+          "during this run",
+          "{s:0.8,C:spectral}The Illusioned{s:0.8} and any{}",
+          "{s:0.8}hidden{s:0.8,C:spectral} Spectrals{s:0.8} excluded"
+        }
+      },
       c_star_starspace = {
         name = "Starspace",
         text = { {

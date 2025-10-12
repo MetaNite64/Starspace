@@ -94,7 +94,7 @@ STAR_UTIL.enabled_jokers = {
 -- Consumables table
 STAR_UTIL.enabled_consumables = {
   'wolftopia',
-  --'illusioned',
+  'illusioned',
   --'epitome',
   --'retribution',
   'eclipse',

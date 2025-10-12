@@ -119,6 +119,11 @@ SMODS.current_mod.calculate = function(self, context)
       }))
     end
   end
+
+  -- track used spectrals
+  if context.using_consumeable and context.consumeable.config.center.set == "Spectral" then
+    G.GAME.starspace.last_spectral = context.consumeable.config.center.key
+  end
 end
 
 STAR_UTIL.load_items(STAR_UTIL.enabled_jokers, 'content/jokers')

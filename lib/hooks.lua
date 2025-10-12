@@ -13,7 +13,8 @@ function Game.init_game_object(self)
   end
 
   ret.starspace = {
-    secret_hands = secrets
+    secret_hands = secrets,
+    last_spectral = nil
   }
 
   return ret
