@@ -20,6 +20,20 @@ end
 [[patches]]
 [patches.pattern]
 target = "functions/common_events.lua"
+pattern = "card:set_perishable(true)"
+position = "at"
+match_indent = true
+payload = '''
+if pseudorandom("patch_roll") > 0.5 then
+  card:set_perishable(true)
+else
+  SMODS.Stickers["star_cleansing"]:apply(card, true)
+end
+'''
+
+[[patches]]
+[patches.pattern]
+target = "functions/common_events.lua"
 pattern = "card:set_rental(true)"
 position = "at"
 match_indent = true

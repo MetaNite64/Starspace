@@ -306,6 +306,14 @@ return {
           "or debuffed"
         }
       },
+      star_cleansing = {
+        name = "Cleansing",
+        text = {
+          "Upgrades edition",
+          "every {C:attention}#1#{} rounds",
+          "{C:inactive}({C:attention}#2#{C:inactive} remaining)"
+        }
+      },
       star_efficient = {
         name = "Efficient",
         text = {
@@ -432,6 +440,7 @@ return {
     dictionary = {
       k_plus_steel_ex = "+1 Steel",
       k_plus_trigger_ex = "+1 Trigger",
+      k_cant_upgrade_ex = "Upgrade Failed!",
       k_machete_ex = "Scrapped!",
       k_goggles_ex = "Crafted!",
       k_star_cosmic = "Cosmic",
@@ -455,6 +464,7 @@ return {
       star_isolated = "Isolated",
 
       star_brave = "Brave",
+      star_cleansing = "Cleansing",
       star_efficient = "Efficient",
       star_generous = "Generous",
       star_immortal = "Immortal",

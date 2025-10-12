@@ -130,6 +130,7 @@ STAR_UTIL.enabled_stickers = {
 -- Patches table
 STAR_UTIL.enabled_patches = {
   'immortal',
+  'cleansing',
   'generous',
   'brave',
   'efficient',
