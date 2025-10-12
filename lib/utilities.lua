@@ -96,7 +96,7 @@ STAR_UTIL.enabled_consumables = {
   'wolftopia',
   'illusioned',
   --'epitome',
-  --'retribution',
+  'retribution',
   'eclipse',
   'conductivity',
   'gemstone',

@@ -400,6 +400,17 @@ return {
           "{s:0.8}hidden{s:0.8,C:spectral} Spectrals{s:0.8} excluded"
         }
       },
+      c_star_retribution = {
+        name = "Retribution",
+        text = {
+          "Creates a random",
+          "{C:attention}Joker{} card.",
+          "All rarities that can",
+          "appear in the shop are",
+          "weighted equally",
+          "{C:inactive}(Must have room){}"
+        }
+      },
       c_star_starspace = {
         name = "Starspace",
         text = { {
