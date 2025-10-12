@@ -462,6 +462,12 @@ return {
     },
   },
   misc = {
+    challenge_names = {
+      c_star_point_deduction_5 = "Point Deduction 5"
+    },
+    v_text = {
+      ch_c_star_point_deduction_5 = { "{C:red}X0.5 score{}" }
+    },
     dictionary = {
       k_plus_steel_ex = "+1 Steel",
       k_plus_trigger_ex = "+1 Trigger",

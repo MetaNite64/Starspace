@@ -108,6 +108,11 @@ STAR_UTIL.enabled_hands = {
   'flash',
 }
 
+-- Challenges table
+STAR_UTIL.enabled_challenges = {
+  'point_deduction_5',
+}
+
 -- Seals table
 STAR_UTIL.enabled_seals = {
   'rose_gold',
