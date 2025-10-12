@@ -392,11 +392,15 @@ return {
       },
       c_star_starspace = {
         name = "Starspace",
-        text = {
+        text = { {
           "Creates a",
           "{C:star_galactic,E:1}Galactic{} Joker",
           "{C:inactive}(Must have room){}"
-        }
+        },
+        {
+          "{C:red}Resets all hand{}",
+          "{C:red}levels to 1{}"
+        } }
       }
     },
     Stake = {

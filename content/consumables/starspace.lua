@@ -13,9 +13,6 @@ SMODS.Consumable {
   end,
 
   use = function(self, card, area, copier)
-    -- +2 antes
-    ease_ante(2)
-
     -- all hand levels set to 1
     update_hand_text(
       { sound = "button", volume = 0.7, pitch = 0.8, delay = 0.3 },
