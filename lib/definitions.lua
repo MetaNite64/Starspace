@@ -131,3 +131,22 @@ SMODS.current_mod.calculate = function(self, context)
     }))
   end
 end
+
+-- star_can_select_consumeable: checks if consumeable is selectable
+-- mostly copied from SMODS can_select_from_booster
+G.FUNCS.star_can_select_consumeable = function(e)
+  local card = e.config.ref_table
+  local card_limit = card.ability.card_limit
+  local extra_slots_used = card.ability.extra_slots_used
+  if #G.consumeables.cards < G.consumeables.config.card_limit + card_limit - extra_slots_used then
+    e.config.colour = G.C.GREEN
+    e.config.button = "star_select_consumeable"
+  else
+    e.config.colour = G.C.UI.BACKGROUND_INACTIVE
+    e.config.button = nil
+  end
+end
+-- star_select_consumeable: wrapper that just calls use_card
+G.FUNCS.star_select_consumeable = function(e, mute, nosave)
+  return G.FUNCS.use_card(e, mute, nosave)
+end

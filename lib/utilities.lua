@@ -148,6 +148,12 @@ STAR_UTIL.enabled_quips = {
   'sage_quips',
 }
 
+-- Vouchers table
+STAR_UTIL.enabled_vouchers = {
+  'shoplift',
+  --'heist'
+}
+
 -- custom colors
 STAR_UTIL.colors = {
   rose_gold = HEX("DA9592"),

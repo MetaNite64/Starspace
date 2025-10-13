@@ -45,6 +45,13 @@ SMODS.Atlas {
   px = 71, py = 95
 }
 
+-- vouchers atlas
+SMODS.Atlas {
+  key = "vouchers",
+  path = "vouchers.png",
+  px = 71, py = 95
+}
+
 -- Cosmic rarity
 SMODS.Rarity {
   key = "cosmic",
@@ -72,4 +79,5 @@ STAR_UTIL.load_items(STAR_UTIL.enabled_stakes, 'content/stakes')
 STAR_UTIL.load_items(STAR_UTIL.enabled_stickers, 'content/stickers')
 STAR_UTIL.load_items(STAR_UTIL.enabled_patches, 'content/patches')
 STAR_UTIL.load_items(STAR_UTIL.enabled_quips, 'content/quips')
+STAR_UTIL.load_items(STAR_UTIL.enabled_vouchers, 'content/vouchers')
 assert(SMODS.load_file('lib/collection.lua'))()

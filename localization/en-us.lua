@@ -443,6 +443,16 @@ return {
       }
     },
     Voucher = {
+      v_star_shoplift = {
+        name = "Shoplift",
+        text = {
+          "Consumables can be selected",
+          "from {C:attention}Booster Packs{}",
+          "for later use"
+        }
+      },
+
+      -- edited from vanilla
       v_clearance_sale = {
         name = "Clearance Sale",
         text = {

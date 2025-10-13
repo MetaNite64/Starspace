@@ -14,3 +14,20 @@ payload = '''
 local extra_slots_used = card.ability.extra_slots_used
 if card.ability.set ~= 'Joker' or #G.jokers.cards < G.jokers.config.card_limit + card_limit - extra_slots_used then	
 '''
+
+# G.FUNCS.use_card: if the button is star_select_consumeable, select it to G.consumeables
+[[patches]]
+[patches.pattern]
+target = "functions/button_callbacks.lua"
+pattern = "e.config.button = nil"
+position = "before"
+match_indent = true
+payload = "local button = e.config.button"
+
+[[patches]]
+[patches.pattern]
+target = "functions/button_callbacks.lua"
+pattern = "local select_to = card.area == G.pack_cards and booster_obj and booster_obj.select_card and card:selectable_from_pack(booster_obj)"
+position = "after"
+match_indent = true
+payload = "if button == 'star_select_consumeable' then select_to = 'consumeables' end"
