@@ -443,6 +443,14 @@ return {
       }
     },
     Voucher = {
+      v_star_heist = {
+        name = "Heist",
+        text = {
+          "{C:dark_edition}Hidden{} consumables are",
+          "{C:attention}5{} times more",
+          "likely to appear"
+        }
+      },
       v_star_shoplift = {
         name = "Shoplift",
         text = {
