@@ -31,3 +31,28 @@ pattern = "local select_to = card.area == G.pack_cards and booster_obj and boost
 position = "after"
 match_indent = true
 payload = "if button == 'star_select_consumeable' then select_to = 'consumeables' end"
+
+# create_card: if Heist has been redeemed, increase the odds of hidden consumables appearing
+[[patches]]
+[patches.pattern]
+target = "functions/common_events.lua"
+pattern = "if not forced_key and soulable and (not G.GAME.banned_keys['c_soul']) then"
+position = "after"
+match_indent = true
+payload = "    local multiplier = next(SMODS.find_card('v_star_heist')) and 5 or 1"
+
+[[patches]]
+[patches.pattern]
+target = "functions/common_events.lua"
+pattern = "if pseudorandom('soul_'..v.key.._type..G.GAME.round_resets.ante) > (1 - v.soul_rate) then"
+position = "at"
+match_indent = true
+payload = "if pseudorandom('soul_'..v.key.._type..G.GAME.round_resets.ante) > (1 - (v.soul_rate * multiplier)) then"
+
+[[patches]]
+[patches.pattern]
+target = "functions/common_events.lua"
+pattern = "if pseudorandom('soul_'.._type..G.GAME.round_resets.ante) > 0.997 then"
+position = "at"
+match_indent = true
+payload = "if pseudorandom('soul_'.._type..G.GAME.round_resets.ante) > (1 - (0.003 * multiplier)) then"

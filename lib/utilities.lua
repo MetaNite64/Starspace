@@ -151,7 +151,7 @@ STAR_UTIL.enabled_quips = {
 -- Vouchers table
 STAR_UTIL.enabled_vouchers = {
   'shoplift',
-  --'heist'
+  'heist'
 }
 
 -- custom colors
