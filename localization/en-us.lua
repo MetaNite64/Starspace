@@ -257,7 +257,7 @@ return {
         text = {
           "Gives {X:mult,C:white}X#1#{} Mult",
           "per installed mod",
-          "{C:inactive}(Currently {X:mult,C:white}X#2#{C:inactive} Mult{}"
+          "{C:inactive}(Currently {X:mult,C:white}X#2#{C:inactive} Mult){}"
         }
       }
     },
