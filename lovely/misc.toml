@@ -27,7 +27,7 @@ payload = "local button = e.config.button"
 [[patches]]
 [patches.pattern]
 target = "functions/button_callbacks.lua"
-pattern = "local select_to = card.area == G.pack_cards and booster_obj and booster_obj.select_card and card:selectable_from_pack(booster_obj)"
+pattern = "local select_to = card.area == G.pack_cards and G.pack_cards and booster_obj and SMODS.card_select_area(card, booster_obj) and card:selectable_from_pack(booster_obj)"
 position = "after"
 match_indent = true
 payload = "if button == 'star_select_consumeable' then select_to = 'consumeables' end"
