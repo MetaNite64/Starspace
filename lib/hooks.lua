@@ -10,12 +10,12 @@ function Game.init_game_object(self)
     if v.visible then
       if (type(v.visible) == 'function') then
         local success, res = pcall(v.visible, v)
-        if success and res then
+        if not success or not res then
         table.insert(secrets, k)
         end
-      else
-        table.insert(secrets, k)
       end
+    else
+      table.insert(secrets, k)
     end
   end
 
