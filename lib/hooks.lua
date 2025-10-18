@@ -7,8 +7,15 @@ function Game.init_game_object(self)
   -- (i.e. invisible on game start)
   local secrets = {}
   for k, v in pairs(SMODS.PokerHands) do
-    if (type(v.visible) == 'function' and not v:visible()) or not v.visible then
-      table.insert(secrets, k)
+    if v.visible then
+      if (type(v.visible) == 'function') then
+        local success, res = pcall(v.visible, v)
+        if success and res then
+        table.insert(secrets, k)
+        end
+      else
+        table.insert(secrets, k)
+      end
     end
   end
 

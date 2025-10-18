@@ -27,7 +27,7 @@ STAR_UTIL.enabled_jokers = {
   --':3c',
   --'chocolate_pi',
   --'wealth_distribution',
-  --'aikoyori',
+  'aikoyori',
   --'gay_ass_legendary',
   --'marx',
   --'black_card',

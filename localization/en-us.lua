@@ -252,6 +252,14 @@ return {
           "{C:common}Common{} {C:attention}Joker{}"
         }
       },
+      j_star_aikoyori = {
+        name = "Aikoyori",
+        text = {
+          "Gives {X:mult,C:white}X#1#{} Mult",
+          "per installed mod",
+          "{C:inactive}(Currently {X:mult,C:white}X#2#{C:inactive} Mult{}"
+        }
+      }
     },
     Other = {
       -- Seals
