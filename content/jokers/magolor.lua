@@ -3,7 +3,7 @@ SMODS.Joker {
   atlas = "jokers",
   pos = { x = 0, y = 2 },
   config = { extra = {
-    discount = 5,
+    discount = 10,
     discount_gain = 5,
     discount_max = 50
   } },
@@ -48,20 +48,22 @@ SMODS.Joker {
 
   calculate = function(self, card, context)
     if context.end_of_round and context.cardarea == G.jokers and context.beat_boss then
-      G.E_MANAGER:add_event(Event({
-        func = function()
-          card.ability.extra.discount = card.ability.extra.discount + card.ability.extra.discount_gain
-          G.GAME.discount_percent = G.GAME.discount_percent + card.ability.extra.discount_gain
-          for _, v in pairs(G.I.CARD) do
-            if v.set_cost then v:set_cost() end
+      if card.ability.extra.discount < card.ability.extra.discount_max then
+        card.ability.extra.discount = card.ability.extra.discount + card.ability.extra.discount_gain
+        G.E_MANAGER:add_event(Event({
+          func = function()
+            G.GAME.discount_percent = G.GAME.discount_percent + card.ability.extra.discount_gain
+            for _, v in pairs(G.I.CARD) do
+              if v.set_cost then v:set_cost() end
+            end
+            return true
           end
-          return true
-        end
-      }))
-      return {
-        message = localize("k_upgrade_ex"),
-        colour = G.C.MONEY
-      }
+        }))
+        return {
+          message = localize("k_upgrade_ex"),
+          colour = G.C.MONEY
+        }
+      end
     end
   end
 }
