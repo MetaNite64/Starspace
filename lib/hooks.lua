@@ -89,7 +89,7 @@ end
 -- SMODS.is_eternal hook: Immortal patch counts as eternal
 local eternal_ref = SMODS.is_eternal
 function SMODS.is_eternal(card, trigger)
-  if card.ability.star_immortal and (next(trigger) and not trigger.from_sell) then
+  if card.ability.star_immortal and (trigger and next(trigger) and not trigger.from_sell) then
     return true
   end
   return eternal_ref(card, trigger)
