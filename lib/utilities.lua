@@ -113,6 +113,11 @@ STAR_UTIL.enabled_challenges = {
   'point_deduction_5',
 }
 
+-- Editions table
+STAR_UTIL.enabled_editions = {
+  'astral',
+}
+
 -- Seals table
 STAR_UTIL.enabled_seals = {
   'rose_gold',

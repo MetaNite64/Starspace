@@ -1,5 +1,16 @@
 return {
   descriptions = {
+    Edition = {
+      e_star_astral = {
+        name = "Astral",
+        text = {
+          "{X:chips,C:white}X#1#{} Chips per",
+          "{C:attention}Joker owned",
+          "when scored",
+          "{C:inactive}(Currently {X:chips,C:white}X#2#{C:inactive} Chips)"
+        }
+      }
+    },
     Joker = {
       j_star_artful_joker = {
         name = "Artful Joker",
@@ -510,16 +521,23 @@ return {
       a_handsize = "+#1# Hand Size"
     },
     labels = {
+      -- Rarities
       k_star_cosmic = "Cosmic",
       k_star_galactic = "Galactic",
 
+      -- Editions
+      star_astral = "Astral",
+
+      -- Seals
       star_bronze_seal = "Bronze Seal",
       star_emerald_seal = "Emerald Seal",
       star_rose_gold_seal = "Rose Gold Seal",
 
+      -- Stickers
       star_gigantic = "Gigantic",
       star_isolated = "Isolated",
 
+      -- Patches
       star_brave = "Brave",
       star_cleansing = "Cleansing",
       star_efficient = "Efficient",
