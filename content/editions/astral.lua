@@ -12,7 +12,7 @@ SMODS.Edition {
   }},
 
   in_shop = true,
-  weight = 1,
+  weight = 3,
   extra_cost = 6,
   sound = { sound = "polychrome1", per = 1.2, vol = 0.7 },
 
