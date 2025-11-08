@@ -1,3 +1,10 @@
+local edition_order = {
+  "e_foil",
+  "e_holo",
+  "e_polychrome",
+  "e_star_astral"
+}
+
 STAR_UTIL.Patch {
   key = "cleansing",
   badge_colour = HEX("4F5DA1"),
@@ -22,33 +29,25 @@ STAR_UTIL.Patch {
       if card.ability.star_cleansing.extra.rounds <= 0 then
         card.ability.star_cleansing.extra.rounds = card.ability.star_cleansing.extra.total_rounds
 
-        local index = 2
+        local index = 1
         if card.edition then
-          for i, v in ipairs(G.P_CENTER_POOLS.Edition) do
-            if v.key == card.edition.key then
+          for i, v in ipairs(edition_order) do
+            if v == card.edition.key then
               index = i + 1
               break
             end
           end
         end
 
-        if index > #G.P_CENTER_POOLS.Edition then
+        if index > #edition_order or (card.edition and index == 1) then
           return {
             message = localize("k_cant_upgrade_ex"),
             colour = G.C.PURPLE
           }
         end
 
-        local new_edition = G.P_CENTER_POOLS.Edition[index]
-        if new_edition.key == "e_negative" then
-          -- temp until we start adding custom editions
-          return {
-            message = localize("k_cant_upgrade_ex"),
-            colour = G.C.PURPLE
-          }
-        end
-
-        card:set_edition(new_edition.key)
+        local new_edition = edition_order[index]
+        card:set_edition(new_edition)
         return {
           message = localize("k_upgrade_ex"),
           colour = G.C.PURPLE
