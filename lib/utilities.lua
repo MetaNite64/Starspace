@@ -6,9 +6,9 @@ STAR_UTIL.enabled_jokers = {
   'crystal',
   'shard',
 
-  --'astronomical_joker',
-  --'chronological_joker',
-  --'angelic_joker',
+  'astronomical_joker',
+  'chronological_joker',
+  'angelic_joker',
   'paradoxical_joker',
   'glorp',
 

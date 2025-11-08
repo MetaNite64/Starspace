@@ -22,7 +22,7 @@ SMODS.Joker {
   end,
 
   calculate = function(self, card, context)
-    if context.individual and context.cardarea == G.play and not context.blueprint and not context.end_of_round then
+    if context.individual and context.cardarea == G.play and not context.blueprint then
       SMODS.scale_card(card, {
         ref_table = card.ability.extra,
         ref_value = "mult",

@@ -20,6 +20,14 @@ return {
           "{C:inactive}(Currently {X:mult,C:white}X#2#{C:inactive} Mult){}"
         }
       },
+      j_star_angelic_joker = {
+        name = "Angelic Joker",
+        text = {
+          "{C:attention}Gold{} and {C:attention}Lucky{} cards give",
+          "{C:chips}+#2#{} Chips and {C:mult}+#1#{} Mult",
+          "when {C:attention}held in hand{}"
+        }
+      },
       j_star_artful_joker = {
         name = "Artful Joker",
         text = {
@@ -39,12 +47,32 @@ return {
           "{C:inactive}(Currently {X:chips,C:white}X#2#{C:inactive} Chips)"
         }
       },
+      j_star_astronomical_joker = {
+        name = "Astronomical Joker",
+        text = {
+          "Gains {C:chips}+#1#{} Chips for every",
+          "{C:hearts}Heart{} card destroyed.",
+          "Loses {C:chips}#1#{} Chips for every",
+          "{C:spades}Spade{} card destroyed",
+          "{C:inactive}(Currently {C:chips}#2#{C:inactive} Chips){}"
+        }
+      },
       j_star_bacon_burger = {
         name = "Bacon Burger",
         text = {
           "{X:mult,C:white}X#2#{} Mult",
           "{X:chips,C:white}X#1#{} Chips",
           "Eaten after {C:attention}#3#{} hands"
+        }
+      },
+      j_star_chronological_joker = {
+        name = "Chronological Joker",
+        text = {
+          "Gains {C:mult}+#1#{} Mult for every",
+          "{C:spades}Spade{} card destroyed.",
+          "Loses {C:mult}#1#{} Mult for every",
+          "{C:hearts}Heart{} card destroyed",
+          "{C:inactive}(Currently {C:mult}#2#{C:inactive} Mult){}"
         }
       },
       j_star_combo_pizza = {
