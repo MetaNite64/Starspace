@@ -1,7 +1,8 @@
 SMODS.Joker {
     key = "aikoyori",
     atlas = "jokers",
-    pos = {x = 5, y = 7},
+    pos = {x = 11, y = 5},
+    soul_pos = {x = 12, y = 5},
     config = {extra = {xmult = 1.984}},
     rarity = 4,
     cost = 20,

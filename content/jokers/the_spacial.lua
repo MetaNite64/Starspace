@@ -1,7 +1,7 @@
 SMODS.Joker {
   key = "the_spacial",
   atlas = "jokers",
-  pos = { x = 4, y = 5 },
+  pos = { x = 2, y = 5 },
   config = { extra = {
     xscores = 1.5,
     type = "star_flash"
