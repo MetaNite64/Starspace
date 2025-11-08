@@ -75,6 +75,17 @@ return {
           "{C:inactive}(Currently {C:mult}#2#{C:inactive} Mult){}"
         }
       },
+      j_star_colon3c = {
+        name = ":3c",
+        text = {
+          "{C:chips}+#1#{} Chips",
+          "{C:mult}+#2#{} Mult",
+          "{C:green}#3# in #4#{} chance to give",
+          "{C:attention}3X{} the listed values",
+          "{C:green}#5# in #6#{} chance to give",
+          "{X:attention,C:white}33X{} the listed values"
+        }
+      },
       j_star_combo_pizza = {
         name = "Combo Pizza",
         text = {

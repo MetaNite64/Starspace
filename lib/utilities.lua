@@ -16,7 +16,7 @@ STAR_UTIL.enabled_jokers = {
   'scrap_machete',
   --'sage_halo',
   'crystal_goggles',
-  --':3c',
+  'colon3c',
 
   'rocket_pop',
   'combo_pizza',
