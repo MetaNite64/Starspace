@@ -8,8 +8,8 @@ SMODS.Joker {
     retriggers = 0,
     retriggers_gain = 1
   } },
-  rarity = "star_cosmic",
-  cost = 12,
+  rarity = 3,
+  cost = 10,
   blueprint_compat = true,
   eternal_compat = false,
   perishable_compat = true,
