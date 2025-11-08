@@ -180,8 +180,9 @@ return {
         name = "Meta",
         text = {
           "When a {C:attention}playing card{} is scored,",
-          "this Joker gains {C:mult}+#2#{} Mult",
-          "and increases its next gain by {C:attention}1{}",
+          "this Joker gains {C:mult}+#2#{} Mult.",
+          "Increase that gain by {C:attention}1{}",
+          "per each {C:attention}unscored{} card played",
           "{C:inactive}(Currently {C:mult}+#1#{C:inactive} Mult){}"
         }
       },
