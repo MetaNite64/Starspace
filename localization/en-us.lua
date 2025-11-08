@@ -129,6 +129,15 @@ return {
           "{C:inactive}(Maximum of {C:money}#3#{C:inactive}){}"
         }
       },
+      j_star_meta = {
+        name = "Meta",
+        text = {
+          "When a {C:attention}playing card{} is scored,",
+          "this Joker gains {C:mult}+#2#{} Mult",
+          "and increases its next gain by {C:attention}1{}",
+          "{C:inactive}(Currently {C:mult}+#1#{C:inactive} Mult){}"
+        }
+      },
       j_star_meta_knight = {
         name = "Meta Knight",
         text = {

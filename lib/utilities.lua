@@ -80,7 +80,7 @@ STAR_UTIL.enabled_jokers = {
   --'meet_n_huh',
   --'andromeda',
   --'heat_death',
-  --'meta',
+  'meta',
   --'weed',
   --'auzzy',
   --'roaring_knight',
