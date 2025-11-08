@@ -24,17 +24,17 @@ STAR_UTIL.enabled_jokers = {
   --'chocolate_pi',
   --'grapefruit_soda',
 
-  --'kirby',
   'magolor',
   'meta_knight',
   'galacta_knight',
   'susie',
-
   --'marx',
+  
   --'sans',
   --':3c',
   --'shilling',
   'writh_wrath',
+  --'sample_size',
 
   --'honest_joker',
   'fluffy_joker',
@@ -84,36 +84,39 @@ STAR_UTIL.enabled_jokers = {
   --'wee_ancient_joker',
   --'solar_system',
   
+  --'black_card',
+  --'extra_bullet',
+  --'andromeda',
   --'its_a_seal',
   --'impostor',
-  --'andromeda',
-  --'black_card',
-  --'weed',
 
+  --'freegels',
+  --'limited_time_astro_curry',
+  --'weed',
   --'gay_ass_legendary',
   --'slash_and_die',
+
   --'joker?',
   --'heat_death',
   --'stoned_joker',
-
   --'astro_arbiter',
   'aikoyori',
+
   --'aven',
   'meta',
   'plus2',
-
   --'kirby',
   --'meowww',
+
   --'purple_joker',
   --'true_black_card',
   --'big_rip',
-  
   --'ever_higher',
   --'roaring_knight',
+  
   --'overclocked_astro',
   --'overclocked_scrap',
   --'seraph',
-
   --'nxkoo',
 }
 
