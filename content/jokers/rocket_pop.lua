@@ -9,7 +9,7 @@ SMODS.Joker {
     retriggers_gain = 1
   } },
   rarity = 3,
-  cost = 10,
+  cost = 7,
   blueprint_compat = true,
   eternal_compat = false,
   perishable_compat = true,

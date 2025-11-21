@@ -3,7 +3,7 @@ SMODS.Joker {
   atlas = "jokers",
   pos = { x = 2, y = 2 },
   rarity = "star_cosmic",
-  cost = 9,
+  cost = 12,
   blueprint_compat = false,
   eternal_compat = true,
   perishable_compat = true,
@@ -16,14 +16,16 @@ SMODS.Joker {
 
   calculate = function(self, card, context)
     if context.fix_probability and not context.blueprint then
-      if context.identifier == "lucky_mult" or context.identifier == "lucky_money" then
-        return {
-          numerator = context.denominator
-        }
-      end
       if context.identifier == "glass" then
         return {
           numerator = 0
+        }
+      end
+    end
+    if context.mod_probability and not context.blueprint then
+      if context.identifier == "lucky_mult" or context.identifier == "lucky_money" then
+        return {
+          numerator = context.numerator * 4
         }
       end
     end

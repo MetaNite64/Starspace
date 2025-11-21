@@ -8,7 +8,7 @@ SMODS.Joker {
     discount_max = 50
   } },
   rarity = 2,
-  cost = 10,
+  cost = 8,
   blueprint_compat = false,
   eternal_compat = true,
   perishable_compat = true,
@@ -47,7 +47,7 @@ SMODS.Joker {
   end,
 
   calculate = function(self, card, context)
-    if context.end_of_round and context.cardarea == G.jokers and context.beat_boss then
+    if context.end_of_round and context.cardarea == G.jokers and context.beat_boss and not context.blueprint then
       if card.ability.extra.discount < card.ability.extra.discount_max then
         card.ability.extra.discount = card.ability.extra.discount + card.ability.extra.discount_gain
         G.E_MANAGER:add_event(Event({

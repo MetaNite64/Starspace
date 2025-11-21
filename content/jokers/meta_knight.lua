@@ -2,8 +2,9 @@ SMODS.Joker {
   key = "meta_knight",
   atlas = "jokers",
   pos = { x = 1, y = 2 },
+  config = { extra = { dollars = 2 } },
   rarity = "star_cosmic",
-  cost = 12,
+  cost = 15,
   blueprint_compat = true,
   eternal_compat = true,
   perishable_compat = true,
@@ -11,61 +12,31 @@ SMODS.Joker {
 
   loc_vars = function(self, info_queue, card)
     info_queue[#info_queue + 1] = G.P_CENTERS.m_steel
-    info_queue[#info_queue + 1] = G.P_CENTERS.m_gold
+    return { vars = { card.ability.extra.dollars } }
   end,
 
   calculate = function(self, card, context)
-    -- create random steel card at start of blind
+    -- make random card steel at start of blind
     if context.setting_blind then
-      local steel_card = SMODS.create_card { set = "Base", enhancement = "m_steel", area = G.discard }
-      G.playing_card = (G.playing_card and G.playing_card + 1) or 1
-      steel_card.playing_card = G.playing_card
-      table.insert(G.playing_cards, steel_card)
 
-      -- animation event
-      G.E_MANAGER:add_event(Event({
-        func = function()
-          steel_card:start_materialize({ G.C.SECONDARY_SET.Enhanced })
-          G.play:emplace(steel_card)
-          return true
-        end
-      }))
+      local to_steel = pseudorandom_element(G.playing_cards, "meta_knight_pick")
+      while true do
+        if pseudorandom("meta_knight_give_up") < (1 / (next(SMODS.get_enhancements(to_steel)) and 8 or 1)) then break end
+        to_steel = pseudorandom_element(G.playing_cards, "meta_knight_pick")
+      end
+      to_steel:set_ability("m_steel")
       
       return {
         message = localize('k_plus_steel_ex'),
-        colour = G.C.SECONDARY_SET.Enhanced,
-        func = function()
-          G.E_MANAGER:add_event(Event({
-            func = function()
-              G.deck.config.card_limit = G.deck.config.card_limit + 1
-              return true
-            end
-          }))
-          draw_card(G.play, G.deck, 90, 'up')
-          SMODS.calculate_context({ playing_card_added = true, cards = { steel_card } })
-        end
+        colour = G.C.SECONDARY_SET.Enhanced
       }
     end
 
-    -- turn steel cards into gold cards when played and scored
-    if context.before and context.main_eval and not context.blueprint then
-      local steels = 0
-      for _, scored in ipairs(context.scoring_hand) do
-        if SMODS.has_enhancement(scored, "m_steel") then
-          steels = steels + 1
-          scored:set_ability("m_gold", nil, true)
-          G.E_MANAGER:add_event(Event({
-            func = function()
-              scored:juice_up()
-              return true
-            end
-          }))
-        end
-      end
-      if steels > 0 then
+    -- steel cards give $2 when scored
+    if context.individual and context.cardarea == G.play and not context.blueprint then
+      if SMODS.has_enhancement(context.other_card, "m_steel") then
         return {
-          message = localize("k_gold"),
-          colour = G.C.MONEY
+          dollars = card.ability.extra.dollars
         }
       end
     end

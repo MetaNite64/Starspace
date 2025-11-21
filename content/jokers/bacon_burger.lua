@@ -7,7 +7,7 @@ SMODS.Joker {
     xmult = 2.5,
     lifespan = 5
   } },
-  rarity = 2,
+  rarity = 3,
   cost = 8,
   blueprint_compat = true,
   eternal_compat = false,

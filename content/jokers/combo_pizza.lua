@@ -10,7 +10,7 @@ SMODS.Joker {
     money = 10,
     lifespan = 16
   } },
-  rarity = 2,
+  rarity = 3,
   cost = 10,
   blueprint_compat = true,
   eternal_compat = false,

@@ -6,8 +6,8 @@ SMODS.Joker {
     mult = 6,
     chips = 66
   } },
-  rarity = "star_cosmic",
-  cost = 21,
+  rarity = 3,
+  cost = 10,
   blueprint_compat = true,
   eternal_compat = true,
   perishable_compat = true,

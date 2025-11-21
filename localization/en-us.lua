@@ -16,7 +16,7 @@ return {
         name = "Aikoyori",
         text = {
           "Gives {X:mult,C:white}X#1#{} Mult",
-          "per enabled mod",
+          "per installed mod",
           "{C:inactive}(Currently {X:mult,C:white}X#2#{C:inactive} Mult){}"
         }
       },
@@ -108,8 +108,8 @@ return {
       j_star_crystal = {
         name = "Crystal",
         text = {
-          "Retrigger the {C:attention}Joker{} to",
-          "the right twice"
+          "Copy the {C:attention}Jokers{} to the",
+          "{C:attention}left{} and {C:attention}right{} of this Joker"
         }
       },
       j_star_crystal_goggles = {
@@ -144,7 +144,7 @@ return {
           { "{C:attention}Glass{} cards never break" },
           {
             "{C:attention}Lucky{} cards' probabilities",
-            "are guaranteed"
+            "are {C:attention}quadrupled{}"
           }
         }
       },
@@ -190,12 +190,13 @@ return {
         name = "Meta Knight",
         text = {
           {
-            "Add one {C:attention}Steel{} card to the deck",
-            "when {C:attention}Blind{} is selected"
+            "{C:attention}Enhance{} one random card in the deck to {C:attention}Steel{}",
+            "when {C:attention}Blind{} is selected",
+            "{s:0.8,C:inactive}(Weighted towards unenhanced cards){}"
           },
           {
-            "All played {C:attention}Steel{} cards become",
-            "{C:attention}Gold{} cards when scored"
+            "All played {C:attention}Steel{} cards earn",
+            "{C:money}$#1#{} cards when scored"
           }
         }
       },
@@ -264,8 +265,8 @@ return {
       j_star_shard = {
         name = "Shard",
         text = {
-          "Retrigger the leftmost",
-          "{C:attention}Joker{} twice"
+          "Copy the {C:attention}leftmost{}",
+          "and {C:attention}rightmost{} Jokers"
         }
       },
       j_star_shy_joker = {
