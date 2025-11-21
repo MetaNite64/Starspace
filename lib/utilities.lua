@@ -14,7 +14,7 @@ STAR_UTIL.enabled_jokers = {
 
   'creature',
   'scrap_machete',
-  --'sage_halo',
+  'sage_halo',
   'crystal_goggles',
   'colon3c',
 

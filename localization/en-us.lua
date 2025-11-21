@@ -190,7 +190,8 @@ return {
         name = "Meta Knight",
         text = {
           {
-            "{C:attention}Enhance{} one random card in the deck to {C:attention}Steel{}",
+            "{C:attention}Enhance{} one random card",
+            "in the deck to {C:attention}Steel{}",
             "when {C:attention}Blind{} is selected",
             "{s:0.8,C:inactive}(Weighted towards unenhanced cards){}"
           },
@@ -240,6 +241,18 @@ return {
           "every time {C:gold}money{} is",
           "earned during scoring",
           "{C:inactive}(Currently {X:mult,C:white}X#2#{C:inactive} Mult)"
+        }
+      },
+      j_star_sage_halo = {
+        name = "Sage's Halo",
+        text = {
+          "If {C:attention}first hand{} of round contains",
+          "{C:attention}exactly{} three {C:attention}6{}s,",
+          "convert 6 random cards into",
+          "{C:attention}Lucky{} cards and give them",
+          "{C:gold}Gold Seals{} if they don't",
+          "already have seals",
+          "{s:0.8,C:inactive}(Weighted towards unenhanced cards){}"
         }
       },
       j_star_scrap = {
@@ -556,7 +569,8 @@ return {
       ch_c_star_point_deduction_5 = { "{C:red}X0.5 score{}" }
     },
     dictionary = {
-      k_plus_steel_ex = "+1 Steel",
+      k_plus_steel_ex = "Steel!",
+      k_plus_lucky_ex = "Lucky!",
       k_plus_trigger_ex = "+1 Trigger",
       k_cant_upgrade_ex = "Upgrade Failed!",
       k_machete_ex = "Scrapped!",
