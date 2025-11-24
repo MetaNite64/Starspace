@@ -60,9 +60,8 @@ SMODS.Consumable {
       { level = "1" }
     )
     delay(1.3)
-    for poker_hand_key, _ in pairs(G.GAME.hands) do
-      SMODS.smart_level_up_hand(card, poker_hand_key, true, -math.huge)
-      SMODS.smart_level_up_hand(card, poker_hand_key, true)
+    for poker_hand_key, hand in pairs(G.GAME.hands) do
+      SMODS.smart_level_up_hand(card, poker_hand_key, true, 1 - hand.level)
     end
     update_hand_text(
       { sound = "button", volume = 0.7, pitch = 1.1, delay = 0 },
