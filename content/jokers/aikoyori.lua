@@ -24,7 +24,7 @@ SMODS.Joker {
           count = count + 1
         end
       end
-      return {xmult = {1 + card.ability.extra.xmult * count}}
+      return {xmult = (1 + card.ability.extra.xmult * count)}
     end
   end,
 }
