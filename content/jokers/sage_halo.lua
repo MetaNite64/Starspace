@@ -57,7 +57,6 @@ SMODS.Joker {
           else
             to_lucky:set_ability("m_lucky")
           end
-          if not to_lucky.seal then to_lucky:set_seal("Gold") end
         end
 
         return {

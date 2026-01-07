@@ -4,7 +4,7 @@ SMODS.Joker {
   pos = { x = 1, y = 3 },
   config = { extra = {
     xchips = 0.9,
-    xmult = 2.5,
+    xmult = 3,
     lifespan = 5
   } },
   rarity = 3,

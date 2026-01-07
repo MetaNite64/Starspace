@@ -171,10 +171,9 @@ return {
       j_star_meta = {
         name = "Meta",
         text = {
-          "When a {C:attention}playing card{} is scored,",
-          "this Joker gains {C:mult}+#2#{} Mult.",
-          "Increase that gain by {C:attention}1{}",
-          "per each {C:attention}unscored{} card played",
+          "When a {C:attention}hand{} is played,",
+          "this Joker gains {C:mult}+#2#{} Mult",
+          "and increases that gain by {C:attention}#3#{}",
           "{C:inactive}(Currently {C:mult}+#1#{C:inactive} Mult){}"
         }
       },
@@ -240,10 +239,8 @@ return {
         text = {
           "If {C:attention}first hand{} of round contains",
           "{C:attention}exactly{} three {C:attention}6{}s,",
-          "convert 6 random cards into",
-          "{C:attention}Lucky{} cards and give them",
-          "{C:gold}Gold Seals{} if they don't",
-          "already have seals",
+          "convert 6 random cards in full",
+          "deck into {C:attention}Lucky{} cards",
           "{s:0.8,C:inactive}(Weighted towards unenhanced cards){}"
         }
       },
@@ -303,11 +300,10 @@ return {
       j_star_susie = {
         name = "Susie",
         text = {
-          "All playing card chip",
-          "values are {C:attention}halved{}.",
-          "When a card {C:attention}scores{}, this Joker",
-          "gains that card's chip value",
-          "{C:inactive}(Currently {C:chips}+#1#{C:inactive} Chips)"
+          "This Joker gains {C:chips}+#1#{} Chips",
+          "per {C:attention}played{} and {C:attention}scored{} card",
+          "at the end of scoring",
+          "{C:inactive}(Currently {C:chips}+#2#{C:inactive} Chips)"
         }
       },
       j_star_the_spacial = {

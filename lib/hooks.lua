@@ -95,14 +95,6 @@ function SMODS.is_eternal(card, trigger)
   return eternal_ref(card, trigger)
 end
 
--- Card:get_chip_bonus hook: halve chip bonus for every copy of Susie present
-local gcb_ref = Card.get_chip_bonus
-function Card.get_chip_bonus(self)
-  local susies = #SMODS.find_card("j_star_susie")
-  local multiplier = math.pow(0.5, susies)
-  return gcb_ref(self) * multiplier
-end
-
 -- add a SELECT button to consumables if Shoplift is redeemed
 local uasb_ref = G.UIDEF.use_and_sell_buttons
 function G.UIDEF.use_and_sell_buttons(card)

@@ -3,7 +3,8 @@ SMODS.Joker {
   atlas = "jokers",
   pos = { x = 1, y = 7 },
   config = { extra = {
-    chips = 0
+    chips = 0,
+    chip_gain = 4
   } },
   rarity = 2,
   cost = 7,
@@ -14,19 +15,27 @@ SMODS.Joker {
 
   loc_vars = function(self, info_queue, card)
     return { vars = {
+      card.ability.extra.chip_gain,
       card.ability.extra.chips
     } }
   end,
 
   calculate = function(self, card, context)
     -- handle upgrade
-    if context.individual and context.cardarea == G.play and not context.end_of_round and not context.blueprint then
-      card.ability.extra.chips = card.ability.extra.chips + context.other_card:get_chip_bonus()
-      return {
-        message = localize('k_upgrade_ex'),
-        colour = G.C.CHIPS,
-        message_card = card
-      }
+    if context.after and not context.blueprint then
+      SMODS.scale_card(card, {
+        ref_table = card.ability.extra,
+        ref_value = "chips",
+        scalar_value = "chip_gain",
+        operation = function(ref_table, ref_value, initial, change)
+          ref_table[ref_value] = initial + change * #context.scoring_hand
+        end,
+        scaling_message = {
+          message = localize { type = "variable", key = "a_chips", vars = { card.ability.extra.chip_gain * #context.scoring_hand } },
+          colour = G.C.CHIPS
+        }
+      })
+      return nil, true
     end
 
     -- give chips
