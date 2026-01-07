@@ -168,6 +168,13 @@ return {
           "{C:inactive}(Maximum of {C:money}#3#{C:inactive}){}"
         }
       },
+      j_star_marx = {
+        name = "Marx",
+        text = {
+          "Played {C:clubs}Clubs{} give {X:chips,C:white}X#1#{} Chips.",
+          "Played {C:hearts}Hearts{} give {X:mult,C:white}X#1#{} Mult"
+        }
+      },
       j_star_meta = {
         name = "Meta",
         text = {

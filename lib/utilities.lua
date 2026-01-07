@@ -28,7 +28,7 @@ STAR_UTIL.enabled_jokers = {
   'meta_knight',
   'galacta_knight',
   'susie',
-  --'marx',
+  'marx',
   
   --'sans',
   --':3c',
