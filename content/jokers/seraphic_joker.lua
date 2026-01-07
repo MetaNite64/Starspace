@@ -1,5 +1,5 @@
 SMODS.Joker {
-  key = "angelic_joker",
+  key = "seraphic_joker",
   atlas = "jokers",
   pos = { x = 3, y = 1 },
   config = { extra = {

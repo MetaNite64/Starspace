@@ -20,14 +20,6 @@ return {
           "{C:inactive}(Currently {X:mult,C:white}X#2#{C:inactive} Mult){}"
         }
       },
-      j_star_angelic_joker = {
-        name = "Angelic Joker",
-        text = {
-          "{C:attention}Gold{} and {C:attention}Lucky{} cards give",
-          "{C:chips}+#2#{} Chips and {C:mult}+#1#{} Mult",
-          "when {C:attention}held in hand{}"
-        }
-      },
       j_star_artful_joker = {
         name = "Artful Joker",
         text = {
@@ -275,6 +267,15 @@ return {
           "{C:attention}edition, enhancement, and seal{}"
         }
       },
+      j_star_seraphic_joker = {
+        name = "Seraphic Joker",
+        text = {
+          "{C:attention}Gold{} and {C:attention}Lucky{} cards give",
+          "{C:chips}+#2#{} Chips and {C:mult}+#1#{} Mult",
+          "when {C:attention}held in hand{}"
+        }
+      },
+
       j_star_shard = {
         name = "Shard",
         text = {

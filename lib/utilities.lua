@@ -8,7 +8,7 @@ STAR_UTIL.enabled_jokers = {
 
   'astronomical_joker',
   'chronological_joker',
-  'angelic_joker',
+  'seraphic_joker',
   'paradoxical_joker',
   'glorp',
 
