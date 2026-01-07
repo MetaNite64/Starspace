@@ -178,7 +178,8 @@ STAR_UTIL.credits = {
     colour = G.C.PURPLE,
     entries = {
       "Meta",
-      "ThunderEdge"
+      "ThunderEdge",
+      "wingedcatgirl"
     }
   },
   shaders = {
