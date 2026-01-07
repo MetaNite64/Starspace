@@ -110,7 +110,8 @@ SMODS.PokerHand {
   modify_display_text = function(self, cards, scoring_hand)
     local royal = true
     for _, v in ipairs(scoring_hand) do
-      royal = royal and v:is_face()
+      local rank = SMODS.Ranks[v.base.value]
+      royal = royal and rank.face
     end
     if royal then
       return "star_royal_flash"
