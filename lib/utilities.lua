@@ -149,6 +149,7 @@ STAR_UTIL.enabled_challenges = {
 -- Editions table
 STAR_UTIL.enabled_editions = {
   'astral',
+  'otherworldly',
 }
 
 -- Seals table

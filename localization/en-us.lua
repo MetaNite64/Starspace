@@ -9,6 +9,14 @@ return {
           "when scored",
           "{C:inactive}(Currently {X:chips,C:white}X#2#{C:inactive} Chips)"
         }
+      },
+      e_star_otherworldly = {
+        name = "Otherworldly",
+        text = {
+          "Gives the {C:attention}4th root{}",
+          "of {C:chips}Chips{} as {X:mult,C:white}XMult{}",
+          "when scored"
+        }
       }
     },
     Joker = {
@@ -600,6 +608,7 @@ return {
 
       -- Editions
       star_astral = "Astral",
+      star_otherworldly = "Otherworldly",
 
       -- Seals
       star_bronze_seal = "Bronze Seal",
