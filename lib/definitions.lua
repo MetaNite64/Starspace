@@ -166,7 +166,7 @@ STAR_UTIL.credits = {
     colour = G.C.CHIPS,
     entries = {
       "Astro",
-      "Camostar",
+      "Camostar34",
       "candycane",
       "FirstTry",
       "Lyre",
