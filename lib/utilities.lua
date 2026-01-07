@@ -9,8 +9,8 @@ STAR_UTIL.enabled_jokers = {
   'astronomical_joker',
   'chronological_joker',
   'seraphic_joker',
-  'paradoxical_joker',
   'glorp',
+  --'shilling',
 
   'creature',
   'scrap_machete',
@@ -18,11 +18,17 @@ STAR_UTIL.enabled_jokers = {
   'crystal_goggles',
   'colon3c',
 
+  --'selfie',
+  --'flash_card',
+  --'lets_take_a_look',
+  --'meet_n_fuck_kingdom',
+  --'limited_time_astro_curry',
+
   'rocket_pop',
   'combo_pizza',
   'bacon_burger',
-  --'chocolate_pi',
   --'grapefruit_soda',
+  --'jam_jar'
 
   'magolor',
   'meta_knight',
@@ -31,10 +37,16 @@ STAR_UTIL.enabled_jokers = {
   'marx',
   
   --'sans',
-  --':3c',
-  --'shilling',
+  --'genocides',
+  'paradoxical_joker',
+  --'forager',
+  --'pikumiku',
+
   'writh_wrath',
-  --'sample_size',
+  --'built_like_a_brick',
+  --'parity_swap',
+  --'ew_xchips',
+  --'crazy_eights',
 
   --'honest_joker',
   'fluffy_joker',
@@ -63,18 +75,11 @@ STAR_UTIL.enabled_jokers = {
   --'faithful_joker',
   'prideful_joker',
   --'slothful_joker',
-  --'jam_jar',
   --'astrolabe',
-
   --'rise_of_kingdoms',
-  --'ew_xchips',
-  --'crazy_eights',
-  --'parity_swap',
-  --'forager',
 
   --'sappy',
   --'auzzy',
-  --'meet_n_fuck_kingdom',
   --'paper_dragon',
   --'ghost',
 
@@ -91,7 +96,6 @@ STAR_UTIL.enabled_jokers = {
   --'impostor',
 
   --'freegels',
-  --'limited_time_astro_curry',
   --'weed',
   --'gay_ass_legendary',
   --'slash_and_die',
