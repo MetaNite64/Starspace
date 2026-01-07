@@ -150,3 +150,42 @@ end
 G.FUNCS.star_select_consumeable = function(e, mute, nosave)
   return G.FUNCS.use_card(e, mute, nosave)
 end
+
+-- credits defined here
+STAR_UTIL.credits = {
+  squad = {
+    colour = G.C.GREEN,
+    entries = {
+      "Astro",
+      "Crystal",
+      "Meta",
+      "Sage"
+    }
+  },
+  artists = {
+    colour = G.C.CHIPS,
+    entries = {
+      "Astro",
+      "Camostar",
+      "candycane",
+      "FirstTry",
+      "Lyre",
+      "Sage",
+      "SDM_0"
+    }
+  },
+  coders = {
+    colour = G.C.PURPLE,
+    entries = {
+      "Meta",
+      "ThunderEdge"
+    }
+  },
+  shaders = {
+    colour = G.C.MULT,
+    entries = {
+      "cassknows",
+      "Meta"
+    }
+  }
+}

@@ -3,6 +3,7 @@ STAR_UTIL = {}
 assert(SMODS.load_file('lib/definitions.lua'))()
 assert(SMODS.load_file('lib/utilities.lua'))()
 assert(SMODS.load_file('lib/hooks.lua'))()
+assert(SMODS.load_file('lib/ui.lua'))()
 
 -- placeholder atlas
 SMODS.Atlas {

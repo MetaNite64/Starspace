@@ -584,6 +584,11 @@ return {
       star_patches = "Patches",
       bacon_burger_eat = "Nomf...",
       combo_pizza_eat = "Nomf...",
+
+      star_ui_squad = "Core Team",
+      star_ui_artists = "Artists",
+      star_ui_coders = "Coders",
+      star_ui_shaders = "Shaders",
     },
     v_dictionary = {
       a_handsize = "+#1# Hand Size"

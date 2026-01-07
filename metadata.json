@@ -1,7 +1,7 @@
 {
 	"id": "starspace",
 	"name": "Starspace",
-	"author": ["Astro", "Crystal", "Meta"],
+	"author": ["Astro", "Crystal", "Meta", "Sage"],
 	"description": "Astro's personal mod.",
 	"prefix": "star",
 	"main_file": "starspace.lua",
