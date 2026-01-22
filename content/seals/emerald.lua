@@ -6,22 +6,20 @@ SMODS.Seal {
 
   -- thanks Entropy
   calculate = function(self, card, context)
-    if (context.cardarea == G.play or context.cardarea == G.hand) and context.scoring_hand and not context.emerald_trigger then
+    if context.main_scoring and context.cardarea == G.play and context.scoring_hand and not context.emerald_trigger then
       for i, v in ipairs(context.scoring_hand) do
         if v.seal and v ~= card then
           context.emerald_trigger = true
           local eval, post = eval_card(v, context)
           local effects = { eval }
 
-          if context.main_scoring then
-            eval.chips = v.base.nominal + v.ability.bonus or 0
-            SMODS.calculate_context( {
-              individual = true,
-              other_card = v,
-              cardarea = v.area,
-              scoring_hand = context.scoring_hand
-            } )
-          end
+          eval.chips = v.base.nominal + v.ability.bonus or 0
+          SMODS.calculate_context( {
+            individual = true,
+            other_card = v,
+            cardarea = v.area,
+            scoring_hand = context.scoring_hand
+          } )
 
           for _, v in ipairs(post or {}) do effects[#effects + 1] = v end
 
@@ -33,15 +31,13 @@ SMODS.Seal {
 
               for _, v in ipairs(rt_post) do effects[#effects + 1] = v end
 
-              if context.main_scoring then
-                table.insert(effects, { chips = v.base.nominal + v.ability.bonus or 0 } )
-                SMODS.calculate_context( {
-                  individual = true,
-                  other_card = v,
-                  cardarea = v.area,
-                  scoring_hand = context.scoring_hand
-                } )
-              end
+              table.insert(effects, { chips = v.base.nominal + v.ability.bonus or 0 } )
+              SMODS.calculate_context( {
+                individual = true,
+                other_card = v,
+                cardarea = v.area,
+                scoring_hand = context.scoring_hand
+              } )
             end
           end
           SMODS.trigger_effects(effects, v)
