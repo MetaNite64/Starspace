@@ -179,7 +179,8 @@ STAR_UTIL.credits = {
     entries = {
       "Meta",
       "ThunderEdge",
-      "wingedcatgirl"
+      "wingedcatgirl",
+      "CodeRevo"
     }
   },
   shaders = {
