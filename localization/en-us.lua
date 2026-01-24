@@ -165,6 +165,22 @@ return {
           "end of round"
         }
       },
+      j_star_grapefruit_soda_alt = { --ugh/ ignore this
+        name = "Grapefruit Soda",
+        text = {
+          "{C:money}X#4#{} Payout Money",
+          "{C:money}-X#5#{} per discard"
+        }
+      },
+      j_star_grapefruit_soda = { 
+        name = "Grapefruit Soda",
+        text = {
+          "{C:money}$#1#{} at the",
+          "end of a round.",
+          "{C:money}-$#2#{} per discard",
+          "{C:inactive}(Currently {C:money}+$#3#{C:inactive})"
+        }
+      },
       j_star_guileful_joker = {
         name = "Guileful Joker",
         text = {

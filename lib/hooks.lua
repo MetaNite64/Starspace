@@ -211,3 +211,9 @@ function SMODS.calculate_main_scoring(context, scoring_hand)
     return calculate_main_scoring_old(context, scoring_hand)
   end
 end
+
+local arer_ref = add_round_eval_row 
+function add_round_eval_row(config)
+	config.dollars = (((config.dollars or 0) * (G.GAME.starspace_cashout or 1)))
+	return arer_ref(config)
+end

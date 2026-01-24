@@ -27,7 +27,7 @@ STAR_UTIL.enabled_jokers = {
   'rocket_pop',
   'combo_pizza',
   'bacon_burger',
-  --'grapefruit_soda',
+  'grapefruit_soda',
   --'jam_jar'
 
   'magolor',
