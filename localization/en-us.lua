@@ -240,6 +240,15 @@ return {
           "was played this round"
         }
       },
+      j_star_rise_of_kingdoms = {
+        name = "Rise of Kingdoms",
+        text = {
+          "Gains {C:attention}+#1#{} Power",
+          "when blind is selected.",
+          "{C:chips}+Power^(7/24){} Chips.",
+          "{C:inactive}(Currently {C:attention}#2#{C:inactive} Power, {C:chips}+#3#{C:inactive} Chips)"
+        }
+      },
       j_star_rocket_pop = {
         name = "Rocket Pop",
         text = {

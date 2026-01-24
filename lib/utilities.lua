@@ -76,7 +76,7 @@ STAR_UTIL.enabled_jokers = {
   'prideful_joker',
   --'slothful_joker',
   --'astrolabe',
-  --'rise_of_kingdoms',
+  'rise_of_kingdoms',
 
   --'sappy',
   --'auzzy',
