@@ -55,7 +55,7 @@ STAR_UTIL.enabled_jokers = {
   'misaligned_joker',
 
   'edward_robinson', -- was not on here anywhere so i added it after misaligned like in the docs
-  -- 'ms_small_penny_rolls', -- same story
+  'ms_small_penny_rolls', -- same story
 
   --'loyal_joker',
   'shy_joker',

@@ -5,6 +5,11 @@ assert(SMODS.load_file('lib/utilities.lua'))()
 assert(SMODS.load_file('lib/hooks.lua'))()
 assert(SMODS.load_file('lib/ui.lua'))()
 
+-- Talisman compat
+to_big = to_big or function(a)
+    return a
+end
+
 -- placeholder atlas
 SMODS.Atlas {
   key = "placeholder",

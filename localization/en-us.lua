@@ -235,6 +235,16 @@ return {
           },
         }
       },
+      j_star_ms_small_penny_rolls = {
+        name = "Ms. Small Penny Rolls",
+        text = {
+          {
+            "{C:money}+$#1#{} if the blind",
+            "is beaten with",
+            "{C:money}$#2#{} or less",
+          },
+        }
+      },
       j_star_paradoxical_joker = {
         name = "Paradoxical Joker",
         text = {
