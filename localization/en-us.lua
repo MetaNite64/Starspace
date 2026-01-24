@@ -370,10 +370,11 @@ return {
       j_star_shilling = {
         name = "Shilling",
         text = {
-          "Gives {C:mult}+#1#{} Mult per",
+          "Gives {C:mult}+#2#{} Mult per",
           "documented mod {C:attention}Astro{}",
           "is in",
-          '{C:inactive}"Add me to your balatro mod"'
+          '{C:inactive}"Add me to your balatro mod"',
+          "{C:inactive}(Currently {C:mult}+#1#{C:inactive} Mult)"
         }
       },
       j_star_shy_joker = {
