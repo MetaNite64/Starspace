@@ -51,7 +51,7 @@ STAR_UTIL.enabled_jokers = {
   --'honest_joker',
   'fluffy_joker',
   --'insane_joker',
-  --'lesbian_joker',
+  'lesbian_joker',
   --'misaligned_joker',
 
   --'loyal_joker',

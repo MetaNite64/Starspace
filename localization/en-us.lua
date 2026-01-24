@@ -166,6 +166,15 @@ return {
           "was played this round"
         }
       },
+      j_star_lesbian_joker = {
+        name = "Lesbian Joker",
+        text = {
+          "If played hand contains",
+          "{C:attention}#1#{} or more {C:attention}Queens,", 
+          "this Joker gives", 
+          "{C:mult}+#2#{} Mult and {C:money}+$#3#{}"
+        }
+      },
       j_star_magolor = {
         name = "Magolor",
         text = {
