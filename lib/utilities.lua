@@ -10,7 +10,7 @@ STAR_UTIL.enabled_jokers = {
   'chronological_joker',
   'seraphic_joker',
   'glorp',
-  --'shilling',
+  'shilling',
 
   'creature',
   'scrap_machete',

@@ -351,6 +351,15 @@ return {
           "and {C:attention}rightmost{} Jokers"
         }
       },
+      j_star_shilling = {
+        name = "Shilling",
+        text = {
+          "Gives {C:mult}+#1#{} Mult per",
+          "documente mod {C:attention}Astro{}",
+          "is in",
+          '{C:inactive}"Add me to your balatro mod"'
+        }
+      },
       j_star_shy_joker = {
         name = "Shy Joker",
         text = {
