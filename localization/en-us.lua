@@ -259,6 +259,15 @@ return {
           "{s:0.8,C:inactive}(Weighted towards unenhanced cards){}"
         }
       },
+      j_star_sans = {
+        name = "Sans",
+        text = {
+          "{C:attention}Scored Cards{} give",
+          "{C:mult}+#1#{} Mult, {C:chips}+#2#{} Chips",
+          "and {C:money}+$#3#{}",
+          '{C:inactive}"The easiest enemy."'
+        }
+      },
       j_star_scrap = {
         name = "Scrap",
         text = {

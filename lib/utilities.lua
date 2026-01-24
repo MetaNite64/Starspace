@@ -36,7 +36,7 @@ STAR_UTIL.enabled_jokers = {
   'susie',
   'marx',
   
-  --'sans',
+  'sans',
   --'genocides',
   'paradoxical_joker',
   --'forager',
