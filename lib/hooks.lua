@@ -180,6 +180,7 @@ local calculate_main_scoring_old = SMODS.calculate_main_scoring
 function SMODS.calculate_main_scoring(context, scoring_hand)
   if G.GAME.starspace_randomize_scoring or (#SMODS.find_card("j_star_misaligned_joker")>0) then
     local shuffled_table = STAR_UTIL.Shuffle(context.cardarea.cards)
+    STAR_UTIL.shuffled_table = shuffled_table
     for _, card in ipairs(shuffled_table) do
         local in_scoring = scoring_hand and SMODS.in_scoring(card, context.scoring_hand)
         --add cards played to list

@@ -6,7 +6,6 @@ SMODS.Joker({
     pos = { x = 8, y = 4 },
     config = {
         extra = {
-            trigger = true,
             mult = 16,
         }
     },
@@ -18,14 +17,10 @@ SMODS.Joker({
     end,
     calculate = function(self,card,context)
         local cae = card.ability.extra
-        if context.individual and context.cardarea == G.play and cae.trigger then
-            cae.trigger = false
+        if context.individual and context.cardarea == G.play and STAR_UTIL.shuffled_table and context.other_card == STAR_UTIL.shuffled_table[1] then
             return{
                 mult = cae.mult,
             }
-        end
-        if context.after and not context.blueprint then
-            cae.trigger = true
         end
     end
 })
