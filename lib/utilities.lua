@@ -52,7 +52,7 @@ STAR_UTIL.enabled_jokers = {
   'fluffy_joker',
   --'insane_joker',
   'lesbian_joker',
-  --'misaligned_joker',
+  'misaligned_joker',
 
   --'loyal_joker',
   'shy_joker',
@@ -245,6 +245,19 @@ function STAR_UTIL.is_patch(name)
   return false
 end
 
+-- Shuffle function
+-- taken from TOGA's Stuff
+function STAR_UTIL.Shuffle(t, seed)
+	seed = seed or 'shuffley'
+	local rt = {}
+	for i = 1, #t do
+		rt[#rt+1] = t[i]
+	end
+	pseudoshuffle(rt, pseudoseed(seed))
+	return rt
+end
+
+
 -- optional features
 SMODS.current_mod.optional_features = function()
   return {
@@ -259,3 +272,5 @@ SMODS.current_mod.set_debuff = function(card)
     return "prevent_debuff"
   end
 end
+
+

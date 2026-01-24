@@ -216,6 +216,17 @@ return {
           }
         }
       },
+      j_star_misaligned_joker = {
+        name = "Misaligned Joker",
+        text = {
+          {
+            "Playe cards score",
+            "in a {C:dark_edition}random{} order",
+            "{C:attention}First{} scored card",
+            "gives {C:mult}+#1#{} Mult"
+          },
+        }
+      },
       j_star_paradoxical_joker = {
         name = "Paradoxical Joker",
         text = {

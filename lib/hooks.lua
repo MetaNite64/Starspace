@@ -172,3 +172,41 @@ function G.UIDEF.use_and_sell_buttons(card)
   end
   return uasb_ref(card)
 end
+
+
+-- randomizing scoring order
+
+local calculate_main_scoring_old = SMODS.calculate_main_scoring
+function SMODS.calculate_main_scoring(context, scoring_hand)
+  if G.GAME.starspace_randomize_scoring or (#SMODS.find_card("j_star_misaligned_joker")>0) then
+    local shuffled_table = STAR_UTIL.Shuffle(context.cardarea.cards)
+    for _, card in ipairs(shuffled_table) do
+        local in_scoring = scoring_hand and SMODS.in_scoring(card, context.scoring_hand)
+        --add cards played to list
+        if scoring_hand and not SMODS.has_no_rank(card) and in_scoring then
+            G.GAME.cards_played[card.base.value].total = G.GAME.cards_played[card.base.value].total + 1
+            if not SMODS.has_no_suit(card) then
+                G.GAME.cards_played[card.base.value].suits[card.base.suit] = true
+            end
+        end
+        --if card is debuffed
+        if scoring_hand and card.debuff then
+            if in_scoring then 
+                G.GAME.blind.triggered = true
+                G.E_MANAGER:add_event(Event({
+                    trigger = 'immediate',
+                    func = (function() SMODS.juice_up_blind();return true end)
+                }))
+                card_eval_status_text(card, 'debuff')
+            end
+        else
+            if scoring_hand then
+                if in_scoring then context.cardarea = G.play else context.cardarea = 'unscored' end
+            end
+            SMODS.score_card(card, context)
+        end
+    end
+  else
+    return calculate_main_scoring_old(context, scoring_hand)
+  end
+end
