@@ -355,7 +355,7 @@ return {
         name = "Shilling",
         text = {
           "Gives {C:mult}+#1#{} Mult per",
-          "documente mod {C:attention}Astro{}",
+          "documented mod {C:attention}Astro{}",
           "is in",
           '{C:inactive}"Add me to your balatro mod"'
         }
