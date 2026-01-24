@@ -1,5 +1,5 @@
 SMODS.Joker({
-    key = "ms_small_penny_rolls",
+    key = "shilling",
     atlas = "jokers",
     cost = 6,
     rarity = 2,
