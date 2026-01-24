@@ -23,7 +23,7 @@ SMODS.Joker({
         if context.joker_main then
             local q = 0
             for k, v in pairs(G.play.cards) do
-                if v and v.base.id == 12 then
+                if v and v:get_id() == 12 then
                     q = q + 1
                 end
             end

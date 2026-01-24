@@ -130,6 +130,14 @@ return {
           "was played this round"
         }
       },
+      j_star_edward_robinson = {
+        name = "Edward Robinson",
+        text = {
+          "Gains {C:mult}+#1#{} Mult",
+          "for each scored {C:attention}Ace{}",
+          "{C:inactive}(Currently {C:mult}+#2#{C:inactive} Mult)"
+        }
+      },
       j_star_fluffy_joker = {
         name = "Fluffy Joker",
         text = {
@@ -220,7 +228,7 @@ return {
         name = "Misaligned Joker",
         text = {
           {
-            "Playe cards score",
+            "Played cards score",
             "in a {C:dark_edition}random{} order",
             "{C:attention}First{} scored card",
             "gives {C:mult}+#1#{} Mult"
