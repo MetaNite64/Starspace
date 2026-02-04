@@ -56,6 +56,8 @@ STAR_UTIL.enabled_jokers = {
 
   'edward_robinson', -- was not on here anywhere so i added it after misaligned like in the docs
   'ms_small_penny_rolls', -- same story
+  'jimothy',
+  'fridge',
 
   --'loyal_joker',
   'shy_joker',
@@ -125,6 +127,7 @@ STAR_UTIL.enabled_jokers = {
   --'overclocked_scrap',
   --'seraph',
   --'nxkoo',
+  'frorange'
 }
 
 -- Consumables table

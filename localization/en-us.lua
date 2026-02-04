@@ -146,6 +146,22 @@ return {
           "a {C:attention}#2#{}"
         }
       },
+      j_star_fridge = {
+        name = "Fridge",
+        text = {
+          "Imbued with an ancient",
+          "power after {C:attention}#2#{C:inactive} (#1#){} Rounds"
+        }
+      },
+      j_star_frorange = {
+        name = {"Frorange","{C:attention,s:0.6}O r a n g e"},
+        text = {
+          "The fridge thanks you",
+          "for your {C:green}patience,",
+          "and will {C:attention}reward{} you",
+          "with {X:mult,C:white}X#1#{} Mult",
+        }
+      },
       j_star_galacta_knight = {
         name = "Galacta Knight",
         text = {
@@ -188,6 +204,18 @@ return {
           "a hand containing",
           "a {C:attention}#2#{}",
           "was played this round"
+        }
+      },
+      j_star_jimothy = {
+        name = "Jimothy",
+        text = {
+          "Gives {X:mult,C:white}xZ{} Mult",
+          "if played hand contains",
+          "a {C:attention}numbered{} card.",
+          "Gains {C:chips}+Z{} Chips if",
+          "played hand contains a {C:attention}10{}",
+           "{C:inactive,s:0.8}(Z = #1#'s Current Level)",
+           "{C:inactive}(Currently {C:chips}+#3#{C:inactive} Chips)"
         }
       },
       j_star_lesbian_joker = {
@@ -341,7 +369,7 @@ return {
           "{C:inactive}(Currently {X:mult,C:white}X#2#{C:inactive} Mult)"
         }
       },
-      j_star_scrap_machete = {
+      --[[j_star_scrap_machete = {
         name = "Scrap's Machete",
         text = {
           "If {C:attention}first hand{} of round is a single {C:attention}card{},",
@@ -349,6 +377,16 @@ return {
           "the same {C:attention}rank{}, one with the same {C:attention}suit{},",
           "and one with the same",
           "{C:attention}edition, enhancement, and seal{}"
+        }
+      },]]
+      j_star_scrap_machete = {
+        name = "Scrap's Machete",
+        text = {
+          "Played and scoring {C:mult}Mult{}",
+          "Cards are destroyed.",
+          "Gains {X:mult,C:white}X#2#{} Mult per",
+          "destroyed card",
+          "{C:inactive}(Currently {X:mult,C:white}X#1#{C:inactive} Mult){}"
         }
       },
       j_star_seraphic_joker = {
@@ -671,6 +709,7 @@ return {
       k_goggles_ex = "Crafted!",
       k_star_cosmic = "Cosmic",
       k_star_galactic = "Galactic",
+      k_star_concealed = "Concealed",
       star_patches = "Patches",
       bacon_burger_eat = "Nomf...",
       combo_pizza_eat = "Nomf...",

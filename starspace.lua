@@ -76,6 +76,12 @@ SMODS.Rarity {
   default_weight = 0
 }
 
+SMODS.Rarity {
+  key = "concealed",
+  badge_colour = HEX("4f6367"), --dunno the colour
+  default_weight = 0
+}
+
 STAR_UTIL.load_items(STAR_UTIL.enabled_jokers, 'content/jokers')
 STAR_UTIL.load_items(STAR_UTIL.enabled_consumables, 'content/consumables')
 STAR_UTIL.load_items(STAR_UTIL.enabled_hands, 'content/pokerhands')

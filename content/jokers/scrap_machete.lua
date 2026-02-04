@@ -1,4 +1,4 @@
-SMODS.Joker {
+--[[SMODS.Joker {
   key = "scrap_machete",
   atlas = "jokers",
   pos = { x = 0, y = 1 },
@@ -49,6 +49,58 @@ SMODS.Joker {
           remove = true
         }
       end
+    end
+  end
+}]]
+
+
+SMODS.Joker {
+  key = "scrap_machete",
+  atlas = "jokers",
+  pos = { x = 0, y = 1 },
+  rarity = 2,
+  cost = 7,
+  blueprint_compat = false,
+  eternal_compat = true,
+  perishable_compat = true,
+  config = {
+    extra = {
+      xmult = 1,
+      xmult_gain = 0.1,
+    },
+  },
+  loc_vars = function(self, info_queue, card)
+    local cae = card.ability.extra
+    return {
+      vars = {
+        cae.xmult,cae.xmult_gain
+      },
+    }
+  end,
+  
+  calculate = function(self, card, context)
+    local cae = card.ability.extra
+    if context.destroy_card and not context.blueprint then
+      for k, v in pairs(context.scoring_hand) do
+        if context.destroy_card == v and SMODS.get_enhancements(context.destroy_card)["m_mult"] then
+            SMODS.scale_card(card,{
+            ref_table = cae,
+            ref_value = "xmult",
+            scalar_value = "xmult_gain",
+            scaling_message = {}
+          })
+          return{
+            message = localize("k_machete_ex"),
+            remove = true,
+            message_card = context.destroy_card
+          }
+        end
+      end
+    end
+    if context.joker_main then
+      return {
+        xmult = cae.xmult,
+      }
     end
   end
 }
